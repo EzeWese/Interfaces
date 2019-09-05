@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Primer Entregable</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="">Primer Entregable</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active rectContext" href="#">Rect-Context</a>
+                    <a class="nav-item nav-link active rectImageData" href="#">Rect-ImageData</a>
+                    <a class="nav-item nav-link active gradient" href="#">Gradient</a>
+                    <a class="nav-item nav-link active gradient3" href="#">Gradient-Tricolor</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3 mb-3">
+        <div class="row justify-content-center">
+            
+            <div class="col-9 text-center">
+                <canvas id="canvas" width="640" height="360" style="border:#000 solid 1px; width: 100%; height: auto;"/>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container text-center mb-3">
+        <button class="btn btn-dark clean">Clean Canvas</button>
+    </div>
+    <div class="container">
+        
+        <div class="row justify-content-center">
+            
+            <div class="card mb-3 mr-2 text-center" style="width: 18rem; height: 32rem;">
+                    <img src="foto1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Image Size: 480x640</p>
+                        <button type="button" class="btn btn-dark mt-2 picture" value="foto1.jpg">Upload</button>
+                        <button type="button" class="btn btn-dark mt-2 filterGrey" value="">Filter Grey</button>
+                    </div>
+            </div>
+            
+            <div class="card mb-3 mr-2 text-center" style="width: 18rem; height: 20rem;">
+                    <img src="foto2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="width: 100%; height: 100%;">
+                        <p class="card-text">Image Size: 6000x4000</p>
+                        <button type="button" class="btn btn-dark mt-2 picture" value="foto2.jpg">Upload</button>
+                        <button type="button" class="btn btn-dark mt-2 filterGrey" value="">Filter Grey</button>
+                    </div>
+            </div>
+
+            <div class="card mb-3 mr-2 text-center" style="width: 18rem; height: 13rem;">
+                    <img src="foto3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Image Size: 1024x305</p>
+                        <button type="button" class="btn btn-dark mt-2 picture" value="foto3.jpg">Upload</button>
+                        <button type="button" class="btn btn-dark mt-2 filterGrey" value="">Filter Grey</button>
+                    </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="container">
+        <p><strong>Nota:</strong> repaso Javascript en consola.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+</body>
+<footer class="page-footer font-small bg-dark">
+    
+    <div class="footer-copyright text-center py-3" style="color: coral">© 2019 TUDAI -
+      <a style="color: wheat">Interfaces de usuario e Interacción</a>
+    </div>
+  
+</footer>
+</html>
