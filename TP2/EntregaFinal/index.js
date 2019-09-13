@@ -62,7 +62,7 @@ window.onload = function () {
         if(objetoActual !== null){
             objetoActual.deleteVertexOnDbClick(x, y);
         }
-        
+
         afterDeleteVertex();
         redrawEverything();
         
@@ -73,7 +73,7 @@ window.onload = function () {
 
     function afterDeleteVertex() {
         for (let i = 0; i < figures.length; i++) {
-            console.log(figures[i].vertices.length === 0);
+            
             if(figures[i].vertices.length === 0){
                 figures.splice(i, 1);
             }
