@@ -1,0 +1,153 @@
+.body {
+  background-color: blanchedalmond;
+}
+
+.titulo {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.puntaje {
+  font-family: 'Press Start 2P', cursive;
+  border: 0.050em solid coral;
+}
+
+.puntaje2 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.human {
+  position: absolute;
+  left: 0.000em;
+  top: -3.700em;
+  width: 5.188em;
+  height: 9.125em;
+  background: url('walks4.png') left center;
+  margin: 9.375em;
+  z-index: 1;
+  animation: play 0.7s steps(26) infinite;
+} 
+
+@keyframes play {
+  from { background-position: 0; }
+  to {background-position: -134.875em;}
+}
+
+.fondo {
+  border: 0.188em solid coral;
+  position: absolute;
+  left: 0.000em;
+  top: 0.000em;
+  width: 64.000em;
+  height: 20.250em;
+  background: url('desert3.png') left center;
+  margin: auto 0;
+} 
+
+@keyframes fondo {
+  from { background-position: 0; }
+  to {background-position: -64.000em;}
+}
+
+.moneda {
+  width: 1.438em;
+  height: 1.500em;
+  top: 10.250em;
+  left: 68.438em;
+  position: absolute;
+  z-index: -1;
+  right: -79.375em;
+  background: url('coins.png') no-repeat;
+  animation: drop linear;
+  animation-duration: 5s;
+}
+
+.moneda2 {
+  width: 1.438em;
+  height: 1.500em;
+  top: 13.500em;
+  left: 68.438em;
+  position: absolute;
+  z-index: -1;
+  right: -79.375em;
+  background: url('coins.png') no-repeat;
+  animation: drop linear;
+  animation-duration: 5s;
+}
+
+@keyframes drop {
+  from {
+      transform: translate(0.000em,0.000em) ;
+      z-index: 1;
+    }
+
+  to {
+      transform: translate(-62.875em,0.000em);
+      z-index: 1;
+  }
+}
+
+.jump {
+  animation: jump 0.8s linear;
+}
+
+@keyframes jump {
+  0% { top: -8.388em;}
+  25%, 75% { top: -9.013em;}
+  50% { top: -9.638em;}
+  100% { top: -3.700em;}
+}
+
+.down {
+  animation: down linear;
+  animation-duration: 0.5s;  
+}
+
+@keyframes down {
+  from {
+    transform: translate(0.000em,-12.500em) ;
+    z-index: 1;
+  }
+
+  to {
+      transform: translate(0.000em, 0.000em);
+      z-index: 1;
+  }
+}
+
+.destroy {
+  width: 3.500em;
+  height: 3.500em;
+  margin-top: 11.250em;
+  left: 70.000em;
+  position: absolute;
+  z-index: -1;
+  right: -79.375em;
+  background: url('destroy.png') no-repeat;
+  animation: drop linear;
+  animation-duration: 5s;
+}
+
+#gameOver {
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  z-index: -1;
+  top: 0.000em;
+  left: 0.000em;
+  bottom: 0.000em;
+  right: 0.000em;
+  height: 5.625em;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 2.500em;
+  line-height: 2.500em;
+  letter-spacing: 0.313em;
+  animation: blink 1s steps(4, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
