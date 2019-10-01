@@ -1,0 +1,149 @@
+.text {
+    background-color: coral;
+    color: black;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color 2s ease-out;
+}
+
+.text:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+    cursor: pointer;
+    color: white;
+}
+
+.grow { 
+    transition: all .2s ease-in-out;
+    background-color: wheat;    
+}
+
+.grow:hover { 
+    transform: scale(1.2); 
+    z-index: 1;
+}
+
+.threed {
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    background-color: darkgray;
+}
+
+.threed:hover {
+    box-shadow:
+            5px 5px coral,
+            6px 6px coral,
+            7px 7px coral;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+
+.watch {
+    border-radius: 100%;
+    background: white;
+    /*font-family: "Monserrat";*/
+    border: 5px solid wheat;
+    box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.cap {
+    overflow: hidden;
+    position: relative;
+    width: 21.875rem;
+    height: 21.875rem;
+    border-radius: 100%;
+}
+
+.minute,
+.hour {
+  position: absolute;
+  height: 100px;
+  width: 6px;
+  margin: auto;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.minute {
+  position: absolute;
+  height: 130px;
+  width: 4px;
+  top: -38%;
+  left: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  transform: rotate(90deg);
+}
+
+.second {
+  position: absolute;
+  height: 90px;
+  width: 2px;
+  margin: auto;
+  top: -26%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  background: #FF4B3E;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}
+
+.monster {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 83px;
+  height: 146px;
+  background: url('walks4.png') left center;
+  margin: 50px;
+  z-index: 1;
+  animation: play 0.7s steps(26) infinite;
+} 
+
+@keyframes play {
+  from { background-position: 0; }
+  to {background-position: -2158px;}
+}
+
+.fondo {
+  width: 1280px;
+  height: 404px;
+  background: url('desert.png') left center;
+  animation: pepe 10s steps(500) infinite;
+} 
+
+@keyframes pepe {
+  from { background-position: 0; }
+  to {background-position: -1280px;}
+}
