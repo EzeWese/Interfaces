@@ -40,11 +40,11 @@ function cycleGame(cleanGame, player) {
         clearInterval(checkTouchMoneda1);
         clearInterval(checkTouchMoneda2);
         clearInterval(destroyInterval);
-        //clearInterval(divDestroyInterval);
+        clearInterval(divDestroyInterval);
         clearInterval(monedaInterval);
-        //clearInterval(divMoneda);
+        clearInterval(divMoneda);
         clearInterval(moneda2Interval);
-        //clearInterval(divMoneda2);
+        clearInterval(divMoneda2);
         for (let i = 0; i < divCoin.length; i++) {
             divCoin[i].remove();  
         }
@@ -68,10 +68,10 @@ function  generarMoneda1() {
     monedaInterval = setInterval( () => {
         let moneda = new Objeto({class: "moneda"});
     }, 3000);
-    /*divMoneda = setInterval( () => {
+    divMoneda = setInterval( () => {
         divCoin = document.getElementsByClassName('moneda');
         divCoin[0].remove();
-    }, 5500);*/
+    }, 5000);
 
     checkTouchMoneda1 = setInterval(() => {
         divCoin = document.getElementsByClassName('moneda');
@@ -97,10 +97,10 @@ function  generarMoneda2() {
     moneda2Interval = setInterval( () => {
         let moneda = new Objeto({class: "moneda2"});
     }, 2000);
-    /*divMoneda2 = setInterval( () => {
+    divMoneda2 = setInterval( () => {
         divCoin2 = document.getElementsByClassName('moneda2');
         divCoin2[0].remove();
-    }, 5500);*/
+    }, 4000);
 
     checkTouchMoneda2 = setInterval(() => {
         divCoin2 = document.getElementsByClassName('moneda2');
@@ -119,17 +119,17 @@ function  generarMoneda2() {
                 puntos.innerHTML = '<h2 class="puntaje2" id="puntos">Coins '+points+'</h2>';
             }
         }
-    }, 500);
+    }, 200);
 }
 
 function  generarDestroy() {
     destroyInterval = setInterval( () => {
         let destroy = new Objeto({class: "destroy"});
-    }, 1500);
-    /*divDestroyInterval = setInterval( () => {
+    }, 1700);
+    divDestroyInterval = setInterval( () => {
         divDestroy = document.getElementsByClassName('destroy');
         divDestroy[0].remove();
-    }, 5000);*/
+    }, 2500);
 
     checkTouchDestroy = setInterval(() => {
         divDestroy = document.getElementsByClassName('destroy');

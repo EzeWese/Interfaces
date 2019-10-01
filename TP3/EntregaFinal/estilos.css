@@ -64,7 +64,7 @@
 .moneda2 {
   width: 1.438em;
   height: 1.500em;
-  top: 13.500em;
+  top: 14.500em;
   left: 68.438em;
   position: absolute;
   z-index: -1;
@@ -81,7 +81,7 @@
     }
 
   to {
-      transform: translate(-62.875em,0.000em);
+      transform: translate(-67.875em,0.000em);
       z-index: 1;
   }
 }
