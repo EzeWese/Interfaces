@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 40px;
+  margin: auto;
   background-color: var(--green-color);
 }
 
@@ -97,4 +97,22 @@ body {
 
 .textOpacity60:hover{
     color: rgba(0, 0, 0, 0.6);
+}
+
+/* Back */
+.backImage {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 50px;
+    top: 50px;
+}
+
+.div-faq {
+    width: 100%;
+    max-width: 990px;
+    padding: 15px;
+    margin: auto; 
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
 }
