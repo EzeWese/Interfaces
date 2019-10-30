@@ -116,3 +116,19 @@ body {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }
+
+/* Netflics */
+.backgroundText {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 30%;
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15rem;
+    line-height: 15rem;
+    color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    overflow: hidden;
+}

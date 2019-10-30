@@ -14,20 +14,26 @@
 </head>
 <body class="text-center">
   <h1 class="backgroundText">NETFLICS</h1>
-  <form class="form-signin">
-    <label for="inputUser" class="sr-only">Usuario</label>
-    <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus>
-    <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Contraseña" required>
-    <h3 class="h5 mb-3 font-weight-normal"><a href="forgotPassword.html" class="loginAnchor textOpacity60">Olvidaste tu contraseña?</a></h3>
-    <button class="btn btn-lg btn-primary btn-block btnAccept" type="submit"><a href="index.html">LOGIN</a></button>
-    <div class="checkbox mt-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Recordarme
-      </label>
+  <a href="register.html"><img class="backImage" src="images/back.svg" alt="back"></a>
+  <form class="form-signin">    
+    <h5><a href="register.html" class="loginAnchor">Registro</a> > Información Pago</h5>
+    <div class="form-label-group mt-3">
+      <input type="text" id="inputCardName" class="form-control" placeholder="Nombre Titula" required autofocus>
+      <label for="inputCardName" class="sr-only">Nombre Titular</label>
     </div>
-    <h3 class="h5 mb-3 font-weight-bold text-left"><a href="register.html" class="loginAnchor">Nuevo en Netflics?</a></h3>
-    <h3 class="h5 mb-3 font-weight-bold text-left"><a href="FAQlogin.html" class="loginAnchor">Más Información</a></h3>
+    <div class="form-label-group mt-3">
+      <input type="number" id="inputCardNumber" class="form-control" placeholder="Número de Tarjeta" required>
+      <label for="inputCardNumber" class="sr-only">Número de Tarjeta</label>
+    </div>
+    <div class="form-label-group mt-3">
+      <input type="text" id="inputCardExpiration" class="form-control" placeholder="Vencimiento Tarjeta" required>
+      <label for="inputCardExpiration" class="sr-only">Vencimiento Tarjeta</label>
+    </div>      
+    <div class="form-label-group mt-3">
+        <input type="number" id="inputCardCode" class="form-control" placeholder="Código de Seguridad" required>
+        <label for="inputCardCode" class="sr-only">Código de Seguridad</label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit"><a href="register3.html">CONTINUAR</a></button>
   </form>
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>

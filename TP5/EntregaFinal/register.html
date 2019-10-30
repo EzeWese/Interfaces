@@ -13,11 +13,31 @@
   <title>Netflics</title>
 </head>
 <body class="text-center">
+  <h1 class="backgroundText">NETFLICS</h1>
   <a href="login.html"><img class="backImage" src="images/back.svg" alt="back"></a>
   <form class="form-signin">
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit"><a href="login.html">ENVIAR EMAIL</a></button>
+    <h5>Registro</h5>
+    <div class="form-label-group mt-3">
+      <input type="text" id="inputName" class="form-control" placeholder="Nombre" required autofocus>
+      <label for="inputName" class="sr-only">Nombre</label>
+    </div>
+    <div class="form-label-group mt-3">
+      <input type="text" id="inputSurname" class="form-control" placeholder="Apellido" required>
+      <label for="inputSurname" class="sr-only">Apellido</label>
+    </div>
+    <div class="form-label-group mt-3">
+      <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required>
+      <label for="inputUser" class="sr-only">Usuario</label>
+    </div>      
+    <div class="form-label-group mt-3">
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+      <label for="inputPassword" class="sr-only">Contraseña</label>
+    </div>   
+    <div class="form-label-group mt-3">
+      <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña" required>
+      <label for="inputPassword2" class="sr-only">Repita Contraseña</label>
+    </div>   
+    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit"><a href="register2.html">CONTINUAR</a></button>
   </form>
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
