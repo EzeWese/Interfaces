@@ -41,14 +41,26 @@ body {
 
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: grey;
+    border-color: grey;
+    cursor: default;
+}
+
+.loginLink {
+    cursor: default;
+}
+
+.form-control:focus {
+    border-color: var(--green-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.25);
 }
 
 .bd-placeholder-img {
