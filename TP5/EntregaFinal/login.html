@@ -9,18 +9,21 @@
   <link rel="stylesheet" href="css/login.css">
   <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
   <title>Netflics</title>
 </head>
 <body class="text-center">
   <h1 class="backgroundText">NETFLICS</h1>
-  <form class="form-signin">
+  <form class="form-signin" action="index.html">
     <label for="inputUser" class="sr-only">Usuario</label>
-    <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus>
+    <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus onfocusout="validateUser()">
+    <p class="hide mt-1 text-left textAlert font-weight-bold" id="userErrorMessage">Ingrese un usuario.</p>
     <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Contraseña" required>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required onfocusout="validatePassword()">
+    <p class="hide mt-1 text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de 8 carácteres.</p>
     <h3 class="h5 mb-3 font-weight-normal"><a href="forgotPassword.html" class="loginAnchor textOpacity60">Olvidaste tu contraseña?</a></h3>
-    <button class="btn btn-lg btn-primary btn-block btnAccept" type="submit" id="loginButton" disabled><a href="index.html" id="loginLink" class="loginLink">LOGIN</a></button>
+    <button class="btn btn-lg btn-primary btn-block btnAccept" type="submit" id="loginButton" disabled>LOGIN</button>
     <div class="checkbox mt-3">
       <label>
         <input type="checkbox" value="remember-me"> Recordarme

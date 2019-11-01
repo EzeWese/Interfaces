@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="css/login.css">
   <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
   <title>Netflics</title>
 </head>
 <body class="text-center">
   <h1 class="backgroundText">NETFLICS</h1>
   <a href="login.html"><img class="backImage" src="images/back.svg" alt="back"></a>
-  <form class="form-signin">
+  <form class="form-signin" action="register2.html">
     <h5>Registro</h5>
     <div class="form-label-group mt-3">
       <input type="text" id="inputName" class="form-control" placeholder="Nombre" required autofocus>
@@ -37,11 +38,12 @@
       <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña" required>
       <label for="inputPassword2" class="sr-only">Repita Contraseña</label>
     </div>   
-    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit"><a href="register2.html">CONTINUAR</a></button>
+    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" disabled>CONTINUAR</button>
   </form>
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
   </footer>
+    <script src="js/register.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

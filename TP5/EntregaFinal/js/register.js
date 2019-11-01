@@ -1,12 +1,24 @@
+document.getElementById("inputName").addEventListener("keyup", function() {
+    checkRegister();
+});
+
+document.getElementById("inputSurname").addEventListener("keyup", function() {
+    checkRegister();
+});
+
 document.getElementById("inputUser").addEventListener("keyup", function() {
-    checkLogin();
+    checkRegister();
 });
 
 document.getElementById("inputPassword").addEventListener("keyup", function() {
-    checkLogin();
+    checkRegister();
 });
 
-function checkLogin () {
+document.getElementById("inputPassword2").addEventListener("keyup", function() {
+    checkRegister();
+});
+
+function checkRegister () {
     var nameInput = document.getElementById('inputUser').value;
     var loginInput = document.getElementById('inputPassword').value;
     if (nameInput != "" && loginInput != "") {

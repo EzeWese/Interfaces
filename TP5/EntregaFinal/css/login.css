@@ -39,14 +39,6 @@ body {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-}
-
 .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
     background-color: grey;
@@ -58,9 +50,30 @@ body {
     cursor: default;
 }
 
+.form-control {
+    background-color: rgba(0, 54, 58,.25);
+    border-color: var(--green-color);
+    color: white;
+}
+
 .form-control:focus {
     border-color: var(--green-color);
     box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.25);
+    background-color: rgba(0, 54, 58,.25);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.textAlert {
+    color: var(--alert-color);
+    margin: 0px;
 }
 
 .bd-placeholder-img {
@@ -135,7 +148,6 @@ body {
     width: 100%;
     left: 0px;
     top: 30%;
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 15rem;

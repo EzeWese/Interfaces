@@ -4,12 +4,13 @@
     --green-color:  #428E92;
     --green2-color: #2E7377;
     --cancel-color: #FF3D00;
+    --alert-color: #DC3545;
     --accept-color: #01A39D;
     --modal-color: rgba(0, 54, 58, 0.9);
 }
  
 body {
-    font-family: "Open Sans";
+    font-family: 'Roboto', sans-serif;
 }
 
 /* NAVBAR */
@@ -119,7 +120,6 @@ nav {
 
 .modal-title{
     color: #FFFFFF;
-    font-family: "Open Sans";
     font-size: 24px;
     line-height: 24px;
 }
