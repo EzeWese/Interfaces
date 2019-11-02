@@ -17,6 +17,64 @@
   <h1 class="backgroundText">NETFLICS</h1>
   <a href="register2.html"><img class="backImage" src="images/back.svg" alt="back"></a>
   <h5 class="packBreadcrumb"><a href="register.html" class="loginAnchor">Registro</a> > <a href="register2.html" class="loginAnchor">Información Pago</a> > Elige tu Pack</h5>
+
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col" class="attributeHeader"></th>
+          <th scope="col" class="packText packHeader">Básico</th>
+          <th scope="col" class="packText packHeader">Estándar</th>
+          <th scope="col" class="packText packHeader">Premium</th>
+          <th scope="col" class="packText packHeader">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class= "borderTable">
+          <th scope="row" class="text-left packText">Precio</th>
+          <td class="packText">$149</td>
+          <td class="packText">$179</td>
+          <td class="packText">$269</td>
+          <td class="packText">$369</td>
+        </tr>
+        <tr class= "borderTable">
+          <th scope="row" class="text-left packText">Ultra HD</th>
+          <td class="packTextNo">NO</td>
+          <td class="packTextNo">NO</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+        </tr>
+        <tr class= "borderTable">
+          <th scope="row" class="text-left packText">Pantallas que puedes ver al mismo tiempo</th>
+          <td class="packText">1</td>
+          <td class="packText">2</td>
+          <td class="packText">2</td>
+          <td class="packText">4</td>
+        </tr> 
+        <tr class= "borderTable">
+          <th scope="row" class="text-left packText">Mirar en tu laptop, TV, celular y tablet</th>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+        </tr>
+        <tr class= "borderTable">
+          <th scope="row" class="text-left packText">Peliculas y programas de TV ilimitadas</th>
+          <td class="packTextNo">NO</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-left packText">Cancelar en cualquier momento</th>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+          <td class="packText">SI</td>
+        </tr>   
+      </tbody>  
+    </table>
+
+<!--
   <div class="container packContainer">
     <div class="row">
       <div class="col-3 text-left">
@@ -73,11 +131,15 @@
     
       </div>
     </div>
-  </div>    
-  <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" disabled><a href="login.html">ACEPTAR</a></button>
+  </div>
+  -->
+  <form class="formPack" action="login.html">    
+    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" id="packButton" disabled>ACEPTAR</button>
+  </form>
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
   </footer>
+    <script src="js/register3.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

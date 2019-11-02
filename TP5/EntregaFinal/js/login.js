@@ -17,7 +17,6 @@ function checkLogin () {
 }
 
 function validateUser (){
-    console.log("entro");
     var userInput = document.getElementById('inputUser').value;
     if (userInput != ""){
         document.getElementById('userErrorMessage').classList.add("hide");
