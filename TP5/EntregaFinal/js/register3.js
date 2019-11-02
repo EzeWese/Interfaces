@@ -1,63 +1,32 @@
-document.getElementById("inputCardName").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-document.getElementById("inputCardNumber").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-document.getElementById("inputCardExpiration").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-document.getElementById("inputCardCode").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-function checkRegister2 () {
-    var cardNameInput = document.getElementById('inputCardName').value;
-    var cardNumberInput = document.getElementById('inputCardNumber').value;
-    var cardExpirationInput = document.getElementById('inputCardExpiration').value;
-    var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardNameInput != "" && cardNumberInput != "" && cardNumberInput.length == 16 && cardExpirationInput != "" && cardCodeInput != "" && cardCodeInput.length == 4) {
-        document.getElementById('register2Button').removeAttribute("disabled");
-    } else {
-        document.getElementById('register2Button').setAttribute("disabled", null);
-    }
+var userSelection = document.getElementsByClassName('basicSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("basic");
+  })
 }
 
-function validateCardName (){
-    var cardNameInput = document.getElementById('inputCardName').value;
-    if (cardNameInput != ""){
-        document.getElementById('cardNameErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardNameErrorMessage').classList.remove("hide");
-    }
+var userSelection = document.getElementsByClassName('standarSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("standar");
+  })
 }
 
-function validateCardNumber (){
-    var cardNumberInput = document.getElementById('inputCardNumber').value;
-    if (cardNumberInput != "" && cardNumberInput.length == 16){
-        document.getElementById('cardNumberErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardNumberErrorMessage').classList.remove("hide");
-    }
+var userSelection = document.getElementsByClassName('premiumSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("premium");
+  })
 }
 
-function validateCardExpiration (){
-    var cardExpirationInput = document.getElementById('inputCardExpiration').value;
-    if (cardExpirationInput != ""){
-        document.getElementById('cardExpirationErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardExpirationErrorMessage').classList.remove("hide");
-    }
+var userSelection = document.getElementsByClassName('proSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("pro");
+  })
 }
 
-function validateCardCode (){
-    var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardCodeInput != "" && cardCodeInput.length == 4){
-        document.getElementById('cardCodeErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardCodeErrorMessage').classList.remove("hide");
-    }
+function selectPack(packParameter){
+    document.getElementById('packButton').removeAttribute("disabled");
+    alert(packParameter)
 }
