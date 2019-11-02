@@ -182,3 +182,121 @@ nav {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+body {
+  background-color: #006064;
+  
+  
+}
+.col-md-5, .description {
+  padding: 0;
+}
+.description {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+.card-header, .metadata {
+  background: none;
+  padding: 0;
+  position: relative;
+  border-style: none;
+}
+.metadata {
+  font-size: 16px;
+}
+.metadata i, .metadata p {
+  float: left;
+}
+.metadata p {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.metadata i {
+  color: #ff9d00;
+  margin-top: 5px;
+  margin-left: 1px;
+}
+.card-img {
+  -webkit-clip-path: inset(10% 0 20% 0);
+  clip-path: inset(10% 0 20% 0);
+  margin-top: -15%;
+}
+.card-body {
+  position: relative;
+  margin-top: -30%;
+  color: #9FA7A9;
+}
+.card-body .card-title {
+  font-weight: 600;
+  color: #414345;
+}
+.card-body .card-text {
+  margin-top: 8px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.card, .trailer-preview, .like {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover, .trailer-preview:hover, .like:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
+}
+.card {
+  border-radius: 8pt;
+  border-style: none;
+  overflow: hidden;
+  transform: scale(0.8);
+  margin-top: -60px;
+}
+.trailer-preview {
+  background-color: #FF551F;
+  position: absolute;
+  top: -2.875rem;
+  right: 7.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 2.25rem;
+  text-align: center;
+  padding-top: 0.813rem;
+}
+.trailer-preview:hover, .trailer-preview:disabled, .trailer-preview:active, .trailer-preview:focus {
+  background-color: #FF551F;
+  color: white;
+}
+.trailer-preview i {
+  margin-left: 1px;
+}
+
+.like {
+    background-color: #FF551F;
+    position: absolute;
+    top: -46px;
+    right: 24px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 13px;
+  }
+  .like:hover, .like:disabled, .like:active, .like:focus {
+    background-color: #FF551F;
+    color: white;
+  }
+  .like i {
+    margin-left: 1px;
+  }
+
+  .pelicula1 {
+    background: url("https://image.tmdb.org/t/p/w500/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg");
+  }
+
+  .notHiperlink:link {
+      color: inherit;
+      text-decoration: none;
+  }
