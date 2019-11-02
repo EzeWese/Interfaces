@@ -1,0 +1,203 @@
+:root {
+    --main-bg-color: #001751;
+    --background-info-color: rgba(255, 255, 255, 0.3);
+    --green-color: #428E92;
+    --green2-color: #2E7377;
+    --green3-color: #006064;
+    --modal-color: rgba(0, 54, 58, 0.9);
+    --boton-color: #FF551F;
+}
+
+
+body {
+    background: var(--green3-color);
+}
+
+.footerHome {
+    margin-top: 62%;
+}
+
+/*pelicula*/
+.pelicula {
+    position: absolute;
+    width: 1400px;
+    height: 436px;
+    left: 22px;
+    top: 92px;
+
+    background: var(--background-info-color);
+    border-radius: 3px;
+}
+
+.image {
+    position: absolute;
+    width: 298px;
+    height: 391px;
+    left: 30px;
+    top: 15px;
+    object-fit: cover;
+}
+
+.star {
+    position: absolute;
+    width: 45.56px;
+    height: 45.59px;
+    left: 179.6px;
+    top: 340px;
+    background: url(../images/mision.jpg) no-repeat;
+}
+
+.heart {
+    position: absolute;
+    width: 45.56px;
+    height: 45.59px;
+    left: 250px;
+    top: 340px;
+    background: url(../images/mision.jpg) no-repeat;
+}
+
+.titulo {
+    position: absolute;
+    width: 373px;
+    height: 41px;
+    left: 396px;
+    top: 15px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.descripcion {
+    position: absolute;
+    height: 25px;
+    left: 396px;
+    top: 60px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.sinopsis {
+    position: absolute;
+    width: 942px;
+    height: 84px;
+    left: 396px;
+    top: 100px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.vertrailer,
+.verpelicula {
+    position: absolute;
+    top: 230px;
+    width: 132px;
+    height: 44px;
+    background-color: var(--boton-color);
+    border-radius: 9px;
+}
+
+.vertrailer p,
+.verpelicula p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.vertrailer {
+    left: 396px;
+}
+
+.verpelicula {
+    left: 600px;
+}
+
+/*comentario*/
+.comentario {
+    position: absolute;
+    width: 860px;
+    height: 440px;
+    left: 258px;
+    top: 560px;
+
+    background: var(--background-info-color);
+    border-radius: 3px;
+}
+
+.comentario p {
+    padding-left: 30px;
+    width: 815px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.comentario h1 {
+    padding-top: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+    color: #000000;
+}
+
+.comentar {
+    position: absolute;
+    top: 10px;
+    left: 650px;
+    width: 130px;
+    height: 30px;
+    background-color: var(--boton-color);
+    border-radius: 9px;
+}
+
+.comentar p {
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 16px/2 + 0.1px);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
