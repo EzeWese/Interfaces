@@ -119,6 +119,12 @@ body {
     border-radius: 9px;
 }
 
+
+.vertrailer:hover,
+.verpelicula:hover {
+    background-color: var(--boton-color);
+}
+
 .vertrailer p,
 .verpelicula p {
     font-family: Open Sans;
