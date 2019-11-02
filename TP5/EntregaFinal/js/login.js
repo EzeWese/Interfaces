@@ -8,8 +8,8 @@ document.getElementById("inputPassword").addEventListener("keyup", function() {
 
 function checkLogin () {
     var nameInput = document.getElementById('inputUser').value;
-    var loginInput = document.getElementById('inputPassword').value;
-    if (nameInput != "" && loginInput != "") {
+    var passwordInput = document.getElementById('inputPassword').value;
+    if (nameInput != "" && passwordInput != "" && passwordInput.length == 8) {
         document.getElementById('loginButton').removeAttribute("disabled");
     } else {
         document.getElementById('loginButton').setAttribute("disabled", null);

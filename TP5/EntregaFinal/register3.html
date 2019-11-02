@@ -14,13 +14,16 @@
   <title>Netflics</title>
 </head>
 <body class="text-center">
+  <!-- BACKGROUND TITLE -->
   <h1 class="backgroundText">NETFLICS</h1>
+  <!-- BACK ICON -->
   <a href="register2.html"><img class="backImage" src="images/back.svg" alt="back"></a>
+  <!-- BREADCRUMB -->
   <h5 class="packBreadcrumb"><a href="register.html" class="loginAnchor">Registro</a> > <a href="register2.html" class="loginAnchor">Información Pago</a> > Elige tu Pack</h5>
-
-    <table class="table table-borderless">
-      <thead>
-        <tr>
+  <!-- PACK TABLE -->
+  <table class="table table-borderless">
+    <thead>
+      <tr>
           <th scope="col" class="attributeHeader"></th>
           <th scope="col" class="packHeader packBackground packBackgroundTop basicSelector">Básico</th>
           <th scope="col" class="packHeader packBackground packBackgroundTop standarSelector">Estándar</th>
@@ -73,10 +76,31 @@
         </tr>   
       </tbody>  
     </table>
+  
+    <!-- MODAL -->
+    <div class="modal fade" id="packModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Seguro?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btnCancel" data-dismiss="modal">CANCELAR</button>
+              <button type="button" class="btn btn-primary btnAccept"><a href="index.html">ACEPTAR</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <form class="formPack" action="login.html">    
-    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" id="packButton" disabled>ACEPTAR</button>
-  </form>
+      <!-- BUTTON ACCEPT -->
+  <div class="formPack">    
+    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" data-toggle="modal" data-target="#packModal" id="packButton" disabled>ACEPTAR</button>
+  </div>
+
+  <!-- FOOTER -->
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
   </footer>

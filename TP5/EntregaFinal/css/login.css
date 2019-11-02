@@ -207,6 +207,10 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.packBackgroundSelected{
+    background: rgba(0, 54, 58, 0.7);
+}
+
 .packBackgroundTop{
     border-radius: 9px 9px 0px 0px;
 }

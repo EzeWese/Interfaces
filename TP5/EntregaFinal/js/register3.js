@@ -1,32 +1,50 @@
 var userSelection = document.getElementsByClassName('basicSelector');
 for(let i = 0; i < userSelection.length; i++) {
     userSelection[i].addEventListener("click", function() {
-        selectPack("basic");
+        selectPack("basicSelector");
   })
 }
 
 var userSelection = document.getElementsByClassName('standarSelector');
 for(let i = 0; i < userSelection.length; i++) {
     userSelection[i].addEventListener("click", function() {
-        selectPack("standar");
+        selectPack("standarSelector");
   })
 }
 
 var userSelection = document.getElementsByClassName('premiumSelector');
 for(let i = 0; i < userSelection.length; i++) {
     userSelection[i].addEventListener("click", function() {
-        selectPack("premium");
+        selectPack("premiumSelector");
   })
 }
 
 var userSelection = document.getElementsByClassName('proSelector');
 for(let i = 0; i < userSelection.length; i++) {
     userSelection[i].addEventListener("click", function() {
-        selectPack("pro");
+        selectPack("proSelector");
   })
 }
 
 function selectPack(packParameter){
+    var pack = document.getElementsByClassName('basicSelector');
+    unselectPack(pack);
+    var pack = document.getElementsByClassName('standarSelector');
+    unselectPack(pack);
+    var pack = document.getElementsByClassName('proSelector');
+    unselectPack(pack);
+    var pack = document.getElementsByClassName('premiumSelector');
+    unselectPack(pack);
+    var selectedPack = document.getElementsByClassName(packParameter); 
+    for(let i = 0; i < selectedPack.length; i++) {
+        selectedPack[i].classList.add("packBackgroundSelected");
+    }
     document.getElementById('packButton').removeAttribute("disabled");
-    alert(packParameter)
+}
+
+function unselectPack(packParameter){
+    console.log(packParameter);
+    for(let i = 0; i < packParameter.length; i++) {
+        packParameter[i].classList.remove("packBackgroundSelected");
+    }
 }
