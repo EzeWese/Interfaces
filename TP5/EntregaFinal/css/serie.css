@@ -10,6 +10,7 @@
 
 body {
     background: var(--green3-color);
+    overflow-x: hidden;
 }
 
 .footerHome {
