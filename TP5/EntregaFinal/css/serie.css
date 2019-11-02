@@ -8,20 +8,19 @@
     --boton-color: #FF551F;
 }
 
-
 body {
     background: var(--green3-color);
 }
 
 .footerHome {
-    margin-top: 62%;
+    margin-top: 72%;
 }
 
-/*pelicula*/
-.pelicula {
+/*serie*/
+.serie {
     position: absolute;
     width: 1400px;
-    height: 436px;
+    height: 544px;
     left: 22px;
     top: 92px;
 
@@ -109,9 +108,9 @@ body {
 }
 
 .vertrailer,
-.verpelicula {
+.verserie {
     position: absolute;
-    top: 230px;
+    top: 160px;
     width: 132px;
     height: 44px;
     background-color: var(--boton-color);
@@ -119,7 +118,7 @@ body {
 }
 
 .vertrailer p,
-.verpelicula p {
+.verserie p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
@@ -133,8 +132,105 @@ body {
     left: 396px;
 }
 
-.verpelicula {
+.verserie {
     left: 600px;
+}
+
+.capitulos {
+    position: absolute;
+    width: 105px;
+    height: 33px;
+    left: 394px;
+    top: 250px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 160px;
+    overflow-x: hidden;
+}
+
+.temporadas {
+    position: absolute;
+    width: 156px;
+    height: 39.29px;
+    left: 508px;
+    top: 250px;
+}
+
+.temporadas,
+.temporadas ul {
+    background-color: var(--main-bg-color);
+    border-radius: 3px;
+}
+
+.temporadas ul li a,
+.temporadas button {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.capitulo1,
+.capitulo2,
+.capitulo3,
+.capitulo4,
+.capitulo5 {
+    position: absolute;
+    width: 160.28px;
+    height: 200.22px;
+    top: 300px;
+    object-fit: cover;
+}
+
+.capitulo1 {
+    left: 394px;
+}
+
+.capitulo2 {
+    left: 574.28px;
+}
+
+.capitulo3 {
+    left: 754.56px;
+}
+
+.capitulo4 {
+    left: 934.84px;
+}
+
+.capitulo5 {
+    left: 1115.12px;
+}
+
+.capitulo6 {
+    position: absolute;
+    width: 105px;
+    height: 200.22px;
+    top: 300px;
+    left: 1295.4px;
+    opacity: 0.4;
+}
+
+.flecha{
+    position: absolute;
+    left: 93%;
+    right: 3%;
+    top: 70%;
+    bottom: 20%;
+    
+    background: url(../images/mision.jpg) no-repeat; 
 }
 
 /*comentario*/
@@ -143,7 +239,7 @@ body {
     width: 860px;
     height: 440px;
     left: 258px;
-    top: 560px;
+    top: 712px;
 
     background: var(--background-info-color);
     border-radius: 3px;
