@@ -45,7 +45,7 @@ body {
     height: 45.59px;
     left: 179.6px;
     top: 340px;
-    background: url(../images/mision.jpg) no-repeat;
+    background: url(images/mision.jpg) no-repeat;
 }
 
 .heart {
@@ -54,7 +54,7 @@ body {
     height: 45.59px;
     left: 250px;
     top: 340px;
-    background: url(../images/mision.jpg) no-repeat;
+    background: url(images/mision.jpg) no-repeat;
 }
 
 .titulo {
@@ -230,7 +230,7 @@ body {
     top: 70%;
     bottom: 20%;
     
-    background: url(../images/mision.jpg) no-repeat; 
+    background: url(images/mision.jpg) no-repeat; 
 }
 
 /*comentario*/

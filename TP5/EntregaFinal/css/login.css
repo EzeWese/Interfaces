@@ -148,15 +148,6 @@ input::-webkit-inner-spin-button {
     top: 50px;
 }
 
-.div-faq {
-    width: 100%;
-    max-width: 990px;
-    padding: 15px;
-    margin: auto; 
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
-}
-
 /* Netflics */
 .backgroundText {
     position: absolute;
@@ -180,11 +171,12 @@ input::-webkit-inner-spin-button {
 }
 
 /* PACKS */
-.packContainer {
+.div-faq {
     width: 100%;
     max-width: 990px;
     padding: 15px;
     margin: auto; 
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }
 

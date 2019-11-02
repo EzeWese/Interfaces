@@ -1,5 +1,6 @@
 :root {
     --main-bg-color: #001751;
+    --main-bggreen-color: #006064;
     --login-footer-color: #00363A;
     --green-color:  #428E92;
     --green2-color: #2E7377;
@@ -150,6 +151,14 @@ nav {
 .btnCancel:hover{
     background-color: var(--cancel-color);
     opacity: .75;
+    color: #FFFFFF;
+}
+
+.btnCancel.disabled, .btnCancel:disabled {
+    color: #fff;
+    background-color: grey;
+    border-color: grey;
+    cursor: default;
 }
 
 .btnAccept {
