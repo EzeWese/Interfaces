@@ -253,15 +253,15 @@ body {
 .trailer-preview {
   background-color: #FF551F;
   position: absolute;
-  top: -2.875rem;
-  right: 7.5rem;
-  width: 5rem;
-  height: 5rem;
+  top: -46px;
+  right: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   color: white;
-  font-size: 2.25rem;
+  font-size: 36px;
   text-align: center;
-  padding-top: 0.813rem;
+  padding-top: 13px;
 }
 .trailer-preview:hover, .trailer-preview:disabled, .trailer-preview:active, .trailer-preview:focus {
   background-color: #FF551F;
@@ -292,11 +292,28 @@ body {
     margin-left: 1px;
   }
 
-  .pelicula1 {
-    background: url("https://image.tmdb.org/t/p/w500/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg");
-  }
-
   .notHiperlink:link {
       color: inherit;
       text-decoration: none;
   }
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #080d15;
+  opacity: .7;
+}
+
+.overlayText { 
+  font-size: 50px;
+  color:#FF551F;
+  position:absolute;
+  z-index:12;
+  top:46%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
