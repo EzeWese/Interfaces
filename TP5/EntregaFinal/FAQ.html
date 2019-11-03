@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/FAQ.css">
+  <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+  <title>Netflics</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="home.html"><img class="logoImg" src="images/logo.svg" alt="Netflics"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit"><i class="material-icons mt-2 iconSearch">search</i></button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropleft">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">filter_list</i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Acción</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Animación</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Aventuras</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Ciencia Ficción</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Comedia</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Drama</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Fantasía</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Infantil</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Misterio</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Musical</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Policial</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Romance</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Terror</a>
+                            <a class="dropdown-item menuItem myAccountText" href="search.html">Suspenso</a>
+                    </div>
+                </li>
+                <li class="nav-item dropleft">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">favorite</i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/mission.jpg" alt="Mission Impossible - Fallout"> Mission Impossible - Fallout</a>
+                      <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/dora.jpg" alt="Dora y la Ciudad Perdida"> Dora y la Ciudad Perdida</a>
+                      <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/naked.jpg" alt="Naked Gun">Naked Gun</a>
+                    </div>
+                </li>
+                <li class="nav-item dropleft">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/jokerNotif.jpg" alt="Joker Estreno"> Estreno Joker</a>
+                        <a class="dropdown-item menuItem notifFavText" href="serieResume.html"> <img class="notifFavImg" src="images/breakingNotif.webp" alt="Breaking Bad Temporada 5"> Ya Disponible Temporada 5</a>
+                    </div>
+                </li>
+                <li class="nav-item dropleft">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">person</i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item menuItem" href="myProfile.html"><span class="myAccountText">Mi perfil</span></a>
+                            <a class="dropdown-item menuItem" href="FAQ.html"><span class="myAccountText">FAQ</span></a>
+                            <a class="dropdown-item menuItem" href="packs.html"><span class="myAccountText">Paquetes</span></a>
+                            <a class="dropdown-item menuItem" href="#" data-toggle="modal" data-target="#logoutModal"><span class="myAccountText">Cerrar sesion</span></a>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+      </nav>
+
+ <!-- MODAL -->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Seguro?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btnCancel" data-dismiss="modal">CANCELAR</button>
+          <button type="button" class="btn btn-primary btnAccept"><a href="index.html">ACEPTAR</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="div-faq text-left">
+      <h3 class="h5 font-weight-bold">Facturación y pagos de Netflics:</h3>
+      <p class="h6 mb-0 font-weight-normal">Netflics es un servicio prepago por suscripción que te permite ver series y películas ilimitadas en todos tus dispositivos, como tu laptop, TV, teléfono y tableta. La membresía de los usuarios de Netflix se cobrará automáticamente de forma mensual en la fecha en la que se suscribieron al servicio. Continúa leyendo para obtener más información sobre los precios, las formas de pago, los cargos y muchos más temas relacionados con Netflics.</p>
+      <h3 class="h5 mt-3 font-weight-bold">¿Cuánto cuesta Netflics?:</h3>
+      <p class="h6 mb-0 font-weight-normal">Existen varios planes que se adaptan a tus necesidades. </p>
+      <p class="h6 mb-0 font-weight-normal">Básico (ARS 149 por mes): puedes ver series y películas en 1 pantalla con alta definición (HD).</p>
+      <p class="h6 mb-0 font-weight-normal">Estándar (ARS 179 por mes): puedes ver series y películas ilimitadas en 2 pantallas con alta definición (HD).</p>
+      <p class="h6 mb-0 font-weight-normal">Premium (ARS 269 por mes): puedes ver series y películas ilimitadas en 2 pantallas a la vez con definición Ultra HD.</p>
+      <p class="h6 mb-0 font-weight-normal">Pro (ARS 369 por mes): puedes ver series y películas ilimitadas en 4 pantallas a la vez con definición Ultra HD.</p>
+      <h3 class="h5 mt-3 font-weight-bold">¿Cómo puedo ver mi historial de facturación de Netflics o mi factura mensual?</h3>
+      <p class="h6 mb-0 font-weight-normal">Si deseas ver tu historial de facturación, haz clic en Detalles de facturación en la página Cuenta. También puedes seleccionar algunas fechas individuales que desees consultar e imprimir la factura correspondiente a ese mes.</p>
+      <h3 class="h5 mt-3 font-weight-bold">¿Cómo cancelo Netflics?</h3>
+      <p class="h6 mb-0 font-weight-normal">Lamentamos que quieras irte, pero, si necesitas cancelar tu cuenta y finalizar tu membresía, solo selecciona el botón Cancelar membresía en la página de tu Cuenta.</p>
+      </div>
+    <footer class="footerHome">
+      <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

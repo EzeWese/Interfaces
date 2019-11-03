@@ -1,63 +1,50 @@
-document.getElementById("inputCardName").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-document.getElementById("inputCardNumber").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-document.getElementById("inputCardExpiration").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-document.getElementById("inputCardCode").addEventListener("keyup", function() {
-    checkRegister2();
-});
-
-function checkRegister2 () {
-    var cardNameInput = document.getElementById('inputCardName').value;
-    var cardNumberInput = document.getElementById('inputCardNumber').value;
-    var cardExpirationInput = document.getElementById('inputCardExpiration').value;
-    var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardNameInput != "" && cardNumberInput != "" && cardNumberInput.length == 16 && cardExpirationInput != "" && cardCodeInput != "" && cardCodeInput.length == 4) {
-        document.getElementById('register2Button').removeAttribute("disabled");
-    } else {
-        document.getElementById('register2Button').setAttribute("disabled", null);
-    }
+var userSelection = document.getElementsByClassName('basicSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("basicSelector");
+  })
 }
 
-function validateCardName (){
-    var cardNameInput = document.getElementById('inputCardName').value;
-    if (cardNameInput != ""){
-        document.getElementById('cardNameErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardNameErrorMessage').classList.remove("hide");
-    }
+var userSelection = document.getElementsByClassName('standarSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("standarSelector");
+  })
 }
 
-function validateCardNumber (){
-    var cardNumberInput = document.getElementById('inputCardNumber').value;
-    if (cardNumberInput != "" && cardNumberInput.length == 16){
-        document.getElementById('cardNumberErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardNumberErrorMessage').classList.remove("hide");
-    }
+var userSelection = document.getElementsByClassName('premiumSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("premiumSelector");
+  })
 }
 
-function validateCardExpiration (){
-    var cardExpirationInput = document.getElementById('inputCardExpiration').value;
-    if (cardExpirationInput != ""){
-        document.getElementById('cardExpirationErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardExpirationErrorMessage').classList.remove("hide");
-    }
+var userSelection = document.getElementsByClassName('proSelector');
+for(let i = 0; i < userSelection.length; i++) {
+    userSelection[i].addEventListener("click", function() {
+        selectPack("proSelector");
+  })
 }
 
-function validateCardCode (){
-    var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardCodeInput != "" && cardCodeInput.length == 4){
-        document.getElementById('cardCodeErrorMessage').classList.add("hide");
-    } else {
-        document.getElementById('cardCodeErrorMessage').classList.remove("hide");
+function selectPack(packParameter){
+    var pack = document.getElementsByClassName('basicSelector');
+    unselectPack(pack);
+    var pack = document.getElementsByClassName('standarSelector');
+    unselectPack(pack);
+    var pack = document.getElementsByClassName('proSelector');
+    unselectPack(pack);
+    var pack = document.getElementsByClassName('premiumSelector');
+    unselectPack(pack);
+    var selectedPack = document.getElementsByClassName(packParameter); 
+    for(let i = 0; i < selectedPack.length; i++) {
+        selectedPack[i].classList.add("packBackgroundSelected");
+    }
+    document.getElementById('packButton').removeAttribute("disabled");
+}
+
+function unselectPack(packParameter){
+    console.log(packParameter);
+    for(let i = 0; i < packParameter.length; i++) {
+        packParameter[i].classList.remove("packBackgroundSelected");
     }
 }
