@@ -228,9 +228,9 @@ body {
   margin-left: 1px;
 }
 .card-img {
-  -webkit-clip-path: inset(10% 0 20% 0);
-  clip-path: inset(10% 0 20% 0);
-  margin-top: -15%;
+  /*-webkit-clip-path: inset(10% 0 20% 0);
+  clip-path: inset(10% 0 20% 0);*/
+  /*margin-top: -15%;*/
 }
 .card-body {
   position: relative;
@@ -262,13 +262,13 @@ body {
 .trailer-preview {
   background-color: #FF551F;
   position: absolute;
-  top: -46px;
-  right: 120px;
-  width: 80px;
-  height: 80px;
+  top: 85%;
+  right: 110px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   color: white;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   padding-top: 13px;
 }
@@ -283,13 +283,13 @@ body {
 .like {
     background-color: #FF551F;
     position: absolute;
-    top: -46px;
-    right: 24px;
-    width: 80px;
-    height: 80px;
+    top: 85%;
+    right: 22px;
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
     color: white;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     padding-top: 13px;
   }
@@ -318,10 +318,9 @@ body {
 
 .overlayText { 
   font-size: 50px;
-  color:#FF551F;
   position:absolute;
   z-index:12;
-  top:46%;
+  top:42%;
   left:0;
   width:100%;
   text-align:center;
@@ -333,4 +332,19 @@ body {
 
 .cursorPointer {
   cursor: pointer;
+.overlayText h1 {
+  color:#FF551F;
+}
+
+.verMas {
+  background-color: #001751;
+  margin-top: 50%;
+}
+
+.continuarMirando {
+  background-color: #FF3D00;
+}
+
+h3, h1 {
+  color: white;
 }
