@@ -332,6 +332,8 @@ body {
 
 .cursorPointer {
   cursor: pointer;
+}
+
 .overlayText h1 {
   color:#FF551F;
 }
