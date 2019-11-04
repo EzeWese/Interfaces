@@ -43,7 +43,6 @@ function selectPack(packParameter){
 }
 
 function unselectPack(packParameter){
-    console.log(packParameter);
     for(let i = 0; i < packParameter.length; i++) {
         packParameter[i].classList.remove("packBackgroundSelected");
     }

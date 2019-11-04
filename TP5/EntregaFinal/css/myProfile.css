@@ -100,3 +100,9 @@ input::-webkit-inner-spin-button {
 	position: absolute;
 	z-index: -1;
 }
+
+.historialTitle{
+    color: white;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}

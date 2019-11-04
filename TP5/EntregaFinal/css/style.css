@@ -326,3 +326,11 @@ body {
   width:100%;
   text-align:center;
 }
+
+.whiteHeart {
+  color: white;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}

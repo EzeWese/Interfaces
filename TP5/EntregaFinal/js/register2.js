@@ -19,7 +19,7 @@ function checkRegister2 () {
     var cardNumberInput = document.getElementById('inputCardNumber').value;
     var cardExpirationInput = document.getElementById('inputCardExpiration').value;
     var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardNameInput != "" && cardNumberInput != "" && cardNumberInput.length == 16 && cardExpirationInput != "" && cardCodeInput != "" && cardCodeInput.length == 4) {
+    if (cardNameInput != "" && cardNumberInput != "" && cardNumberInput.length == 16 && cardExpirationInput != "" && cardCodeInput != "" && cardCodeInput.length == 3) {
         document.getElementById('register2Button').removeAttribute("disabled");
     } else {
         document.getElementById('register2Button').setAttribute("disabled", null);
@@ -55,7 +55,7 @@ function validateCardExpiration (){
 
 function validateCardCode (){
     var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardCodeInput != "" && cardCodeInput.length == 4){
+    if (cardCodeInput != "" && cardCodeInput.length == 3){
         document.getElementById('cardCodeErrorMessage').classList.add("hide");
     } else {
         document.getElementById('cardCodeErrorMessage').classList.remove("hide");
