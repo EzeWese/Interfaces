@@ -1,24 +1,24 @@
 html,
 body {
-  height: 100%;
-  min-height: 100%;
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: auto;
-  background-color: var(--green-color);
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--green-color);
 }
 
 .form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto; 
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 3px;
 }
@@ -27,27 +27,28 @@ body {
     width: 100%;
     max-width: 330px;
     padding: 15px;
-    margin: auto; 
+    margin: auto;
     border-radius: 3px;
 }
 
 .form-signin .checkbox {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .form-signin .form-control:focus {
-  z-index: 2;
+    z-index: 2;
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
     color: #fff;
     background-color: grey;
     border-color: grey;
@@ -59,15 +60,15 @@ body {
 }
 
 .form-control {
-    background-color: rgba(0, 54, 58,.25);
+    background-color: rgba(0, 54, 58, .25);
     border-color: var(--green-color);
     color: white;
 }
 
 .form-control:focus {
     border-color: var(--green-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.25);
-    background-color: rgba(0, 54, 58,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .25);
+    background-color: rgba(0, 54, 58, .25);
     color: white;
 }
 
@@ -102,7 +103,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -121,7 +122,7 @@ input::-webkit-inner-spin-button {
     flex-shrink: 0;
 }
 
-.footerHome{
+.footerHome {
     width: 100%;
     height: 75px;
     background-color: var(--main-bg-color);
@@ -145,11 +146,11 @@ input::-webkit-inner-spin-button {
     color: #000;
 }
 
-.textOpacity60{
+.textOpacity60 {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.textOpacity60:hover{
+.textOpacity60:hover {
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -189,63 +190,64 @@ input::-webkit-inner-spin-button {
     width: 100%;
     max-width: 990px;
     padding: 15px;
-    margin: auto; 
+    margin: auto;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }
 
 .borderTable {
-    border-bottom: 1px solid #FFF !important; 
+    border-bottom: 1px solid #FFF !important;
 }
 
-.table-borderless{
+.table-borderless {
     margin: 100px 50px 0px 50px;
     width: 75%;
     height: 40%;
 }
 
-.attributeHeader{
+.attributeHeader {
     width: 25%;
 }
 
-.packBackground{
+.packBackground {
     background: rgba(0, 54, 58, 0.4);
     cursor: pointer;
 }
 
-.packBackgroundSelected{
+.packBackgroundSelected {
     background: rgba(0, 54, 58, 0.7);
 }
 
-.packBackgroundTop{
+.packBackgroundTop {
     border-radius: 9px 9px 0px 0px;
 }
 
-.packBackgroundBot{
+.packBackgroundBot {
     border-radius: 0px 0px 9px 9px;
 }
 
-.packHeader{
+.packHeader {
     font-size: 1.5rem;
     width: 17.5%;
     color: #FFF;
 }
 
-.packText{
+.packText {
     color: #FFF;
 }
 
-.packRowHeader{
+.packRowHeader {
     color: #FFF;
     height: 72px;
     line-height: 24px;
 }
 
-.table td, .table th {
+.table td,
+.table th {
     vertical-align: middle;
 }
 
-.packTextNo{
+.packTextNo {
     color: var(--alert-color);
 }
 

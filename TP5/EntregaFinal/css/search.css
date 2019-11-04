@@ -1,9 +1,9 @@
-.mySearchMain{
+.mySearchMain {
     background-color: var(--main-bggreen-color);
     padding: 50px 25px 50px 25px;
 }
 
-.mySearchContainer{
+.mySearchContainer {
     background-color: rgba(256, 256, 256, 0.3);
     padding: 50px 100px 50px 100px;
     color: white;
@@ -13,18 +13,21 @@
     width: 100%;
     max-width: 330px;
     padding: 15px;
-    margin: auto; 
+    margin: auto;
     border-radius: 3px;
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
     color: #fff;
     background-color: grey;
     border-color: grey;
     cursor: default;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
     background-color: var(--cancel-color);
     border-radius: 9px;
     border: 0px;
@@ -36,15 +39,15 @@
 }
 
 .custom-select {
-    background-color: rgba(0, 54, 58,.50);
+    background-color: rgba(0, 54, 58, .50);
     border-color: var(--green-color);
     color: white;
 }
 
 .custom-select:focus {
     border-color: var(--green-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.50);
-    background-color: rgba(0, 54, 58,.50);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
     color: white;
 }
 
@@ -53,21 +56,21 @@
 }
 
 select option {
-    background-color: rgba(0, 54, 58,.50);
+    background-color: rgba(0, 54, 58, .50);
     border-color: var(--green-color);
     color: white;
 }
 
 .form-control {
-    background-color: rgba(0, 54, 58,.50);
+    background-color: rgba(0, 54, 58, .50);
     border-color: var(--green-color);
     color: white;
 }
 
 .form-control:focus {
     border-color: var(--green-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.50);
-    background-color: rgba(0, 54, 58,.50);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
     color: white;
 }
 
@@ -100,15 +103,15 @@ input::-webkit-inner-spin-button {
 }
 
 .inputFile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
-.historialTitle{
+.historialTitle {
     color: white;
     padding-bottom: 25px;
     padding-left: 25px;
@@ -129,7 +132,7 @@ input::-webkit-inner-spin-button {
 
 .inputTest {
     flex: 1 0 0;
-    min-width: 0; 
+    min-width: 0;
     margin: 0;
     padding: 0;
 }
@@ -139,7 +142,7 @@ input::-webkit-inner-spin-button {
     padding: 0;
 }
 
-.custom-range::-webkit-slider-runnable-track{
+.custom-range::-webkit-slider-runnable-track {
     background-color: var(--main-bggreen-color);
     border-radius: 0px;
 }

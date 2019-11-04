@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/login.css">
   <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="favicon/favicon.png" />
   <title>Netflics</title>
 </head>
+
 <body class="text-center">
   <h1 class="backgroundText">NETFLICS</h1>
   <a href="register.html"><img class="backImage" src="images/back.svg" alt="back"></a>
-  <form class="form-signin" action="register3.html">    
+  <form class="form-signin" action="register3.html">
     <h5><a href="register.html" class="loginAnchor">Registro</a> > Información Pago</h5>
     <div class="form-label-group mt-1">
-      <input type="text" id="inputCardName" class="form-control" placeholder="Nombre Titular" required autofocus onfocusout="validateCardName()">
+      <input type="text" id="inputCardName" class="form-control" placeholder="Nombre Titular" required autofocus
+        onfocusout="validateCardName()">
       <label for="inputCardName" class="sr-only">Nombre Titular</label>
       <p class="hide text-left textAlert font-weight-bold" id="cardNameErrorMessage">Ingrese un nombre de titular.</p>
     </div>
     <div class="form-label-group mt-1">
-      <input type="number" id="inputCardNumber" class="form-control" placeholder="Número de Tarjeta" required onfocusout="validateCardNumber()">
+      <input type="number" id="inputCardNumber" class="form-control" placeholder="Número de Tarjeta" required
+        onfocusout="validateCardNumber()">
       <label for="inputCardNumber" class="sr-only">Número de Tarjeta</label>
-      <p class="hide text-left textAlert font-weight-bold" id="cardNumberErrorMessage">Ingrese un número de tarjeta de 16 dígitos.</p>
+      <p class="hide text-left textAlert font-weight-bold" id="cardNumberErrorMessage">Ingrese un número de tarjeta de
+        16 dígitos.</p>
     </div>
     <div class="form-label-group mt-1">
-      <input type="text" id="inputCardExpiration" class="form-control" placeholder="Vencimiento Tarjeta" required onfocusout="validateCardExpiration()">
+      <input type="text" id="inputCardExpiration" class="form-control" placeholder="Vencimiento Tarjeta" required
+        onfocusout="validateCardExpiration()">
       <label for="inputCardExpiration" class="sr-only">Vencimiento Tarjeta</label>
-      <p class="hide text-left textAlert font-weight-bold" id="cardExpirationErrorMessage">Ingrese un vencimiento de tarjeta.</p>
-    </div>      
-    <div class="form-label-group mt-1">
-      <input type="number" id="inputCardCode" class="form-control" placeholder="Código de Seguridad" required onfocusout="validateCardCode()">
-      <label for="inputCardCode" class="sr-only">Código de Seguridad</label>
-      <p class="hide text-left textAlert font-weight-bold" id="cardCodeErrorMessage">Ingrese un código de seguridad de 3 dígitos.</p>
+      <p class="hide text-left textAlert font-weight-bold" id="cardExpirationErrorMessage">Ingrese un vencimiento de
+        tarjeta.</p>
     </div>
-    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" id="register2Button" disabled>CONTINUAR</button>
+    <div class="form-label-group mt-1">
+      <input type="number" id="inputCardCode" class="form-control" placeholder="Código de Seguridad" required
+        onfocusout="validateCardCode()">
+      <label for="inputCardCode" class="sr-only">Código de Seguridad</label>
+      <p class="hide text-left textAlert font-weight-bold" id="cardCodeErrorMessage">Ingrese un código de seguridad de 3
+        dígitos.</p>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" id="register2Button"
+      disabled>CONTINUAR</button>
   </form>
   <footer class="footerLogin">
-    <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
+    <div class="mr-5">Copyright © 2019 Netflics</div>
+    <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i
+        class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
   </footer>
-    <script src="js/register2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <script src="js/register2.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

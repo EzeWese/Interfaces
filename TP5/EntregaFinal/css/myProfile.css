@@ -1,9 +1,9 @@
-.myProfileMain{
+.myProfileMain {
     background-color: var(--main-bggreen-color);
     padding: 50px 25px 50px 25px;
 }
 
-.myAccountContainer{
+.myAccountContainer {
     background-color: rgba(256, 256, 256, 0.3);
     padding: 50px 100px 50px 100px;
     color: white;
@@ -13,11 +13,12 @@
     width: 100%;
     max-width: 330px;
     padding: 15px;
-    margin: auto; 
+    margin: auto;
     border-radius: 3px;
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
     color: #fff;
     background-color: grey;
     border-color: grey;
@@ -29,15 +30,15 @@
 }
 
 .custom-select {
-    background-color: rgba(0, 54, 58,.50);
+    background-color: rgba(0, 54, 58, .50);
     border-color: var(--green-color);
     color: white;
 }
 
 .custom-select:focus {
     border-color: var(--green-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.50);
-    background-color: rgba(0, 54, 58,.50);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
     color: white;
 }
 
@@ -46,21 +47,21 @@
 }
 
 select option {
-    background-color: rgba(0, 54, 58,.50);
+    background-color: rgba(0, 54, 58, .50);
     border-color: var(--green-color);
     color: white;
 }
 
 .form-control {
-    background-color: rgba(0, 54, 58,.50);
+    background-color: rgba(0, 54, 58, .50);
     border-color: var(--green-color);
     color: white;
 }
 
 .form-control:focus {
     border-color: var(--green-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58,.50);
-    background-color: rgba(0, 54, 58,.50);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
     color: white;
 }
 
@@ -93,15 +94,15 @@ input::-webkit-inner-spin-button {
 }
 
 .inputFile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
-.historialTitle{
+.historialTitle {
     color: white;
     padding-bottom: 25px;
     padding-left: 25px;

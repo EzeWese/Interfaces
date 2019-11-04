@@ -100,7 +100,8 @@ body {
 
 
 .vertrailer:hover,
-.verpelicula:hover , .comentar:hover{
+.verpelicula:hover,
+.comentar:hover {
     background-color: var(--boton-color);
     opacity: .9
 }
@@ -213,7 +214,8 @@ body {
     background-color: var(--boton-color);
     border-radius: 9px;
     border: 0px;
-    width: 263px;;
+    width: 263px;
+    ;
     color: #FFFFFF;
 }
 
@@ -223,7 +225,7 @@ body {
     color: #FFFFFF;
 }
 
-.inputsComentario{
+.inputsComentario {
     display: block;
 }
 

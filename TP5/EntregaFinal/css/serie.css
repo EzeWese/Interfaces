@@ -23,7 +23,7 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 22px;
-    
+
     background: var(--background-info-color);
     border-radius: 3px;
 }
@@ -163,7 +163,7 @@ body {
     color: #FFFFFF;
 }
 
-.temporadas button:hover{
+.temporadas button:hover {
     color: rgb(200, 200, 200);
 }
 
