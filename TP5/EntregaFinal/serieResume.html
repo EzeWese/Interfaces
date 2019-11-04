@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/serie.css">
     <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png" />
     <title>Netflics</title>
 </head>
 
@@ -24,7 +24,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline">
+            <form class="form-inline" action="search.html">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn" type="submit"><i class="material-icons mt-2 iconSearch">search</i></button>
             </form>
@@ -119,9 +119,17 @@
 
 
     <div class="serie">
-        <img class="image" src="images/breakingbad.jpg">
-        <div class="star"></div>
-        <div class="heart"></div>
+        <div>
+            <img class="image" src="images/breakingbad.jpg">
+            <div class="iconos">
+                <a class="trailer-preview" href="#">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+                <a class="like cursorPointer" href="#">
+                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
         <h1 class="titulo">Breaking Bad</h1>
         <p class="descripcion">2015 • Accion - Aventura • 5 temporadas • ★★★★⛤</p>
         <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
@@ -129,32 +137,36 @@
             aliquid ex ea commodi consequat. </p>
         <a class="vertrailer btn btn-primary" href="#" role="button">Trailer</a>
         <a class="verserie btn btn-primary" href="#" role="button">Ver</a>
-        <h1 class="capitulos">Capitulos</h1>
-
-        <div class="temporadas btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Temporadas</button>
-            <ul class="dropdown-menu scrollable-menu" role="menu">
-                <li><a href="?1">Temporada 1</a></li>
-                <li><a href="?2">Temporada 2</a></li>
-                <li><a href="?3">Temporada 3</a></li>
-                <li><a href="?4">Temporada 4</a></li>
-                <li><a href="?5">Temporada 5</a></li>
-                <li><a href="?6">Temporada 6</a></li>
-            </ul>
+        <div class="selecciontemporada">
+            <h1 class="capitulos">Capitulos</h1>
+            <div class="temporadas btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Temporadas</button>
+                <ul class="dropdown-menu scrollable-menu" role="menu">
+                    <li><a href="?1">Temporada 1</a></li>
+                    <li><a href="?2">Temporada 2</a></li>
+                    <li><a href="?3">Temporada 3</a></li>
+                    <li><a href="?4">Temporada 4</a></li>
+                    <li><a href="?5">Temporada 5</a></li>
+                    <li><a href="?6">Temporada 6</a></li>
+                </ul>
+            </div>
         </div>
-        <img class="capitulo1" src="images/breaking1.jpg">
-        <img class="capitulo2" src="images/breaking2.jpg">
-        <img class="capitulo3" src="images/breaking3.jpg">
-        <img class="capitulo4" src="images/breaking4.jpg">
-        <img class="capitulo5" src="images/breaking1.jpg">
-        <img class="capitulo6" src="images/breaking2.jpg">
-        <div class="flecha"></div>
+        <div class="listacapitulos">
+            <img class="capitulo1" src="images/breaking1.jpg">
+            <img class="capitulo2" src="images/breaking2.jpg">
+            <img class="capitulo3" src="images/breaking3.jpg">
+            <img class="capitulo4" src="images/breaking4.jpg">
+            <img class="capitulo5" src="images/breaking1.jpg">
+            <img class="capitulo6" src="images/breaking2.jpg">
+        </div>
     </div>
 
     <div class="comentario">
-        <h1>Comments</h1>
-        <a class="comentar btn btn-primary" href="#" role="button" data-toggle="modal"
-            data-target="#comentarModal">Comentar</a>
+        <div class="">
+            <a class="comentar btn btn-primary" href="#" role="button" data-toggle="modal"
+                data-target="#comentarModal">Comentar</a>
+            <h1>Comments</h1>
+        </div>
         <p>USER - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
             ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla

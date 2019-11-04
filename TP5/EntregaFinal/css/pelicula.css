@@ -12,59 +12,42 @@
 body {
     background: var(--green3-color);
     overflow-x: hidden;
+    font-family: Open Sans;
 }
 
 .footerHome {
-    margin-top: 62%;
+    margin-top: 3%;
 }
 
 /*pelicula*/
 .pelicula {
-    position: absolute;
-    width: 1400px;
-    height: 436px;
-    left: 22px;
-    top: 92px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 22px;
 
     background: var(--background-info-color);
     border-radius: 3px;
 }
 
 .image {
-    position: absolute;
-    width: 298px;
-    height: 391px;
-    left: 30px;
-    top: 15px;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
     object-fit: cover;
 }
 
-.star {
+.iconos {
     position: absolute;
-    width: 45.56px;
-    height: 45.59px;
-    left: 179.6px;
-    top: 340px;
-    background: url(images/mision.jpg) no-repeat;
-}
-
-.heart {
-    position: absolute;
-    width: 45.56px;
-    height: 45.59px;
-    left: 250px;
-    top: 340px;
-    background: url(images/mision.jpg) no-repeat;
+    margin-left: 21.5%;
+    margin-top: -5.2%;
 }
 
 .titulo {
-    position: absolute;
-    width: 373px;
-    height: 41px;
-    left: 396px;
-    top: 15px;
+    width: 30%;
+    margin-left: 25%;
+    margin-top: -29%;
 
-    font-family: Open Sans;
+
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -76,12 +59,10 @@ body {
 }
 
 .descripcion {
-    position: absolute;
-    height: 25px;
-    left: 396px;
-    top: 60px;
+    height: 10%;
+    margin-left: 25%;
+    margin-top: -0.5%;
 
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -93,13 +74,10 @@ body {
 }
 
 .sinopsis {
-    position: absolute;
-    width: 942px;
-    height: 84px;
-    left: 396px;
-    top: 100px;
-
-    font-family: Open Sans;
+    width: 70%;
+    height: 10%;
+    margin-left: 25%;
+    margin-top: 0%;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -111,23 +89,24 @@ body {
 
 .vertrailer,
 .verpelicula {
-    position: absolute;
-    top: 230px;
+    margin-top: 1%;
+    margin-bottom: 15%;
     width: 132px;
     height: 44px;
     background-color: var(--boton-color);
     border-radius: 9px;
+    border-color: var(--boton-color);
 }
 
 
 .vertrailer:hover,
 .verpelicula:hover , .comentar:hover{
     background-color: var(--boton-color);
+    opacity: .9
 }
 
-.vertrailer p,
-.verpelicula p {
-    font-family: Open Sans;
+.vertrailer a,
+.verpelicula a {
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -137,20 +116,18 @@ body {
 }
 
 .vertrailer {
-    left: 396px;
+    margin-left: 25%;
 }
 
 .verpelicula {
-    left: 600px;
+    margin-left: 5px;
 }
 
 /*comentario*/
 .comentario {
-    position: absolute;
-    width: 860px;
-    height: 440px;
-    left: 258px;
-    top: 560px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
 
     background: var(--background-info-color);
     border-radius: 3px;
@@ -158,8 +135,8 @@ body {
 
 .comentario p {
     padding-left: 30px;
-    width: 815px;
-    font-family: Open Sans;
+    width: 95%;
+    height: 95%;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -169,7 +146,7 @@ body {
 
 .comentario h1 {
     padding-top: 30px;
-    font-family: Open Sans;
+    padding-left: 30px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -182,9 +159,8 @@ body {
 }
 
 .comentar {
-    position: absolute;
-    top: 10px;
-    left: 650px;
+    margin-left: 50%;
+    margin-top: 2%;
     width: 130px;
     height: 30px;
     background-color: var(--boton-color);
@@ -194,8 +170,6 @@ body {
 .comentar p {
     position: absolute;
     height: 16px;
-    top: calc(50% - 16px/2 + 0.1px);
-    font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;

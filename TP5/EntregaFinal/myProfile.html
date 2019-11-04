@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/myProfile.css">
-    <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
-    <title>Netflics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myProfile.css">
+  <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="favicon/favicon.png" />
+  <title>Netflics</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="home.html"><img class="logoImg" src="images/logo.svg" alt="Netflics"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit"><i class="material-icons mt-2 iconSearch">search</i></button>
-            </form>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropleft">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">filter_list</i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Acción</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Animación</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Aventuras</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Ciencia Ficción</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Comedia</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Drama</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Fantasía</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Infantil</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Misterio</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Musical</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Policial</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Romance</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Terror</a>
-                            <a class="dropdown-item menuItem myAccountText" href="search.html">Suspenso</a>
-                    </div>
-                </li>
-                <li class="nav-item dropleft">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">favorite</i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/mission.jpg" alt="Mission Impossible - Fallout"> Mission Impossible - Fallout</a>
-                      <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/dora.jpg" alt="Dora y la Ciudad Perdida"> Dora y la Ciudad Perdida</a>
-                      <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/naked.jpg" alt="Naked Gun">Naked Gun</a>
-                    </div>
-                </li>
-                <li class="nav-item dropleft">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">notifications</i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg" src="images/jokerNotif.jpg" alt="Joker Estreno"> Estreno Joker</a>
-                        <a class="dropdown-item menuItem notifFavText" href="serieResume.html"> <img class="notifFavImg" src="images/breakingNotif.webp" alt="Breaking Bad Temporada 5"> Ya Disponible Temporada 5</a>
-                    </div>
-                </li>
-                <li class="nav-item dropleft">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">person</i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item menuItem" href="myProfile.html"><span class="myAccountText">Mi perfil</span></a>
-                            <a class="dropdown-item menuItem" href="FAQ.html"><span class="myAccountText">FAQ</span></a>
-                            <a class="dropdown-item menuItem" href="packs.html"><span class="myAccountText">Paquetes</span></a>
-                            <a class="dropdown-item menuItem" href="#" data-toggle="modal" data-target="#logoutModal"><span class="myAccountText">Cerrar sesion</span></a>
-                        </div>
-                    </li>
-            </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="home.html"><img class="logoImg" src="images/logo.svg" alt="Netflics"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline" action="search.html">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit"><i class="material-icons mt-2 iconSearch">search</i></button>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropleft">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="material-icons">filter_list</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Acción</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Animación</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Aventuras</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Ciencia Ficción</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Comedia</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Drama</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Fantasía</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Infantil</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Misterio</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Musical</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Policial</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Romance</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Terror</a>
+            <a class="dropdown-item menuItem myAccountText" href="search.html">Suspenso</a>
+          </div>
+        </li>
+        <li class="nav-item dropleft">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="material-icons">favorite</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg"
+                src="images/mission.jpg" alt="Mission Impossible - Fallout"> Mission Impossible - Fallout</a>
+            <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg"
+                src="images/dora.jpg" alt="Dora y la Ciudad Perdida"> Dora y la Ciudad Perdida</a>
+            <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg"
+                src="images/naked.jpg" alt="Naked Gun">Naked Gun</a>
+          </div>
+        </li>
+        <li class="nav-item dropleft">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="material-icons">notifications</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item menuItem notifFavText" href="movieResume.html"> <img class="notifFavImg"
+                src="images/jokerNotif.jpg" alt="Joker Estreno"> Estreno Joker</a>
+            <a class="dropdown-item menuItem notifFavText" href="serieResume.html"> <img class="notifFavImg"
+                src="images/breakingNotif.webp" alt="Breaking Bad Temporada 5"> Ya Disponible Temporada 5</a>
+          </div>
+        </li>
+        <li class="nav-item dropleft">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="material-icons">person</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item menuItem" href="myProfile.html"><span class="myAccountText">Mi perfil</span></a>
+            <a class="dropdown-item menuItem" href="FAQ.html"><span class="myAccountText">FAQ</span></a>
+            <a class="dropdown-item menuItem" href="packs.html"><span class="myAccountText">Paquetes</span></a>
+            <a class="dropdown-item menuItem" href="#" data-toggle="modal" data-target="#logoutModal"><span
+                class="myAccountText">Cerrar sesion</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -101,204 +116,224 @@
 
 
 
-    <main class="myProfileMain">  
-      <div class="myAccountContainer">
-        <h1>Cuenta</h1>
-        <div class="row">
-          <div class="col-8">
-            <div class="form-label-group mt-1">
-              <input type="text" id="inputName" class="form-control" placeholder="Nombre" value="Juan" required onfocusout="validateName()">
-              <label for="inputName" class="sr-only">Nombre</label>
-              <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">Ingrese un nombre.</p>
-            </div>
-            <div class="form-label-group mt-1">
-              <input type="text" id="inputSurname" class="form-control" placeholder="Apellido" value="Rodriguez" required onfocusout="validateSurname()">
-              <label for="inputSurname" class="sr-only">Apellido</label>
-              <p class="hide text-left textAlert font-weight-bold" id="surnameErrorMessage">Ingrese un apellido.</p>
-            </div>
-            <div class="form-label-group mt-1">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email" value="juan@rodriguez.com" required onfocusout="validateEmail()">
-              <label for="inputEmail" class="sr-only">Email</label>
-              <p class="hide text-left textAlert font-weight-bold" id="emailErrorMessage">Ingrese un email válido.</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="form-label-group mt-1">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" value="12345678" required onfocusout="validatePassword()">
-                  <label for="inputPassword" class="sr-only">Contraseña</label>
-                  <p class="hide text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de 8 carácteres.</p>
-                </div>   
-              </div>
-              <div class="col-6">
-                <div class="form-label-group mt-1">
-                  <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña" value="12345678" required onfocusout="validatePassword2()">
-                  <label for="inputPassword2" class="sr-only">Repita Contraseña</label>
-                  <p class="hide text-left textAlert font-weight-bold" id="password2ErrorMessage">Repita su contraseña de 8 carácteres.</p> 
-                </div>
-              </div>
-            </div>
-            <div class="form-label-group mt-1">
-              <select class="custom-select" id="inputLanguage">
-                <option class="custom-select" selected value="1">Español</option>
-                <option class="custom-select" value="2">Ingles</option>
-              </select>
-              <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
-            </div>      
-            <div class="form-label-group mt-1">
-              <select class="custom-select" id="inputNotification">
-                <option class="custom-select" selected value="1">Recibir sólo notificaciones Inapp</option>
-                <option class="custom-select" value="2">Recibir notificaciones también vía email</option>
-              </select>
-              <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
-            </div>  
-            <div class="row">
-                <div class="col-6">
-                  <button class="btn btn-lg btn-block btnCancel mt-3" type="submit" id="cancelMyAccountButton" disabled>CANCELAR</button>   
-                </div>
-                <div class="col-6">
-                  <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" id="acceptMyAccountButton" disabled>CONTINUAR</button> 
-                </div>
-              </div>  
+  <main class="myProfileMain">
+    <div class="myAccountContainer">
+      <h1>Cuenta</h1>
+      <div class="row">
+        <div class="col-8">
+          <div class="form-label-group mt-1">
+            <input type="text" id="inputName" class="form-control" placeholder="Nombre" value="Juan" required
+              onfocusout="validateName()">
+            <label for="inputName" class="sr-only">Nombre</label>
+            <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">Ingrese un nombre.</p>
           </div>
-          <div class="col-4">
-              <div class="row">
-                  <div class="col-12">
-                    <img src="images/gorila.jpg" class="imageMyAccount" id="imageMyAccount" alt="Profile Image">
-                  </div>
-                  <div class="col-12">
-                    <input id="uploadImageMyAccountButton" type="file" class="btn btn-lg btn-block btnCancel mt-3 inputFile" accept="image/*">
-                    <label for="uploadImageMyAccountButton" class="btn btn-lg btn-block btnCancel mt-3 labelFile">CAMBIAR FOTO</label>
-                  </div>
-                </div>  
+          <div class="form-label-group mt-1">
+            <input type="text" id="inputSurname" class="form-control" placeholder="Apellido" value="Rodriguez" required
+              onfocusout="validateSurname()">
+            <label for="inputSurname" class="sr-only">Apellido</label>
+            <p class="hide text-left textAlert font-weight-bold" id="surnameErrorMessage">Ingrese un apellido.</p>
+          </div>
+          <div class="form-label-group mt-1">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" value="juan@rodriguez.com"
+              required onfocusout="validateEmail()">
+            <label for="inputEmail" class="sr-only">Email</label>
+            <p class="hide text-left textAlert font-weight-bold" id="emailErrorMessage">Ingrese un email válido.</p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-label-group mt-1">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" value="12345678"
+                  required onfocusout="validatePassword()">
+                <label for="inputPassword" class="sr-only">Contraseña</label>
+                <p class="hide text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de
+                  8 carácteres.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-label-group mt-1">
+                <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña"
+                  value="12345678" required onfocusout="validatePassword2()">
+                <label for="inputPassword2" class="sr-only">Repita Contraseña</label>
+                <p class="hide text-left textAlert font-weight-bold" id="password2ErrorMessage">Repita su contraseña de
+                  8 carácteres.</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-label-group mt-1">
+            <select class="custom-select" id="inputLanguage">
+              <option class="custom-select" selected value="1">Español</option>
+              <option class="custom-select" value="2">Ingles</option>
+            </select>
+            <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
+          </div>
+          <div class="form-label-group mt-1">
+            <select class="custom-select" id="inputNotification">
+              <option class="custom-select" selected value="1">Recibir sólo notificaciones Inapp</option>
+              <option class="custom-select" value="2">Recibir notificaciones también vía email</option>
+            </select>
+            <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-lg btn-block btnCancel mt-3" type="submit" id="cancelMyAccountButton"
+                disabled>CANCELAR</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" id="acceptMyAccountButton"
+                disabled>CONTINUAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-12">
+              <img src="images/gorila.jpg" class="imageMyAccount" id="imageMyAccount" alt="Profile Image">
+            </div>
+            <div class="col-12">
+              <input id="uploadImageMyAccountButton" type="file" class="btn btn-lg btn-block btnCancel mt-3 inputFile"
+                accept="image/*">
+              <label for="uploadImageMyAccountButton" class="btn btn-lg btn-block btnCancel mt-3 labelFile">CAMBIAR
+                FOTO</label>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    </div>
 
-      <div class="container-fluid mt-5">
-          <h1 class="historialTitle">Historial</h1>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <div class="card-body">
-                    <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 metadata">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <p>9.5/10</p>
-                        </div>
-                        <div class="col-8 metadata">Action. Adventure</div>
-                      </div>
-                    </div>
-                    <a class="trailer-preview" href="#" target="new">
+    <div class="container-fluid mt-5">
+      <h1 class="historialTitle">Historial</h1>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <a class="notHiperlink" href="movieResume.html">
+              <div class="card-header header-icon-container">
+                <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-4 metadata">
                       <i class="fa fa-star" aria-hidden="true"></i>
-                    </a>
-                    <a class="like cursorPointer" target="new">
-                      <i class="far fa-heart whiteHeart" aria-hidden="true"></i>
-                    </a>
+                      <p>9.5/10</p>
+                    </div>
+                    <div class="col-8 metadata">Action. Adventure</div>
                   </div>
+                </div>
+                <a class="trailer-preview" href="#" target="new">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+                <a class="like cursorPointer" target="new">
+                  <i class="far fa-heart whiteHeart" aria-hidden="true"></i>
                 </a>
               </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <div class="card-body">
-                    <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 metadata">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <p>9.5/10</p>
-                        </div>
-                        <div class="col-8 metadata">Action. Adventure</div>
-                      </div>
-                    </div>
-                    <a class="trailer-preview" href="#" target="new">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                    </a>
-                    <a class="like cursorPointer" target="new">
-                      <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <div class="card-body">
-                    <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 metadata">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <p>9.5/10</p>
-                        </div>
-                        <div class="col-8 metadata">Action. Adventure</div>
-                      </div>
-                    </div>
-                    <a class="trailer-preview" href="#" target="new">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                    </a>
-                    <a class="like cursorPointer" target="new">
-                      <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <div class="card-body">
-                    <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 metadata">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <p>9.5/10</p>
-                        </div>
-                        <div class="col-8 metadata">Action. Adventure</div>
-                      </div>
-                    </div>
-                    <a class="trailer-preview" href="#" target="new">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                    </a>
-                    <a class="like cursorPointer" target="new">
-                      <i class="far fa-heart whiteHeart" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </a>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <a class="notHiperlink" href="movieResume.html">
+              <div class="card-header header-icon-container">
+                <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-4 metadata">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <p>9.5/10</p>
+                    </div>
+                    <div class="col-8 metadata">Action. Adventure</div>
+                  </div>
+                </div>
+                <a class="trailer-preview" href="#" target="new">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+                <a class="like cursorPointer" target="new">
+                  <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <a class="notHiperlink" href="movieResume.html">
+              <div class="card-header header-icon-container">
+                <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-4 metadata">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <p>9.5/10</p>
+                    </div>
+                    <div class="col-8 metadata">Action. Adventure</div>
+                  </div>
+                </div>
+                <a class="trailer-preview" href="#" target="new">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+                <a class="like cursorPointer" target="new">
+                  <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <a class="notHiperlink" href="movieResume.html">
+              <div class="card-header header-icon-container">
+                <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <p class="card-title h3 mt-3">Mission:Imposible Fallout</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-4 metadata">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <p>9.5/10</p>
+                    </div>
+                    <div class="col-8 metadata">Action. Adventure</div>
+                  </div>
+                </div>
+                <a class="trailer-preview" href="#" target="new">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+                <a class="like cursorPointer" target="new">
+                  <i class="far fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </main>
+  </main>
 
-      <footer class="footerHome">
-        <div class="mr-5">Copyright © 2019 Netflics</div> <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
-      </footer>
-    
-    <script src="js/heart.js"></script>
-    <script src="js/myProfile.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <footer class="footerHome">
+    <div class="mr-5">Copyright © 2019 Netflics</div>
+    <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i
+        class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
+  </footer>
+
+  <script src="js/heart.js"></script>
+  <script src="js/myProfile.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

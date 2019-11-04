@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/pelicula.css">
     <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png" />
     <title>Netflics</title>
 </head>
 
@@ -24,7 +24,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline">
+            <form class="form-inline" action="search.html">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn" type="submit"><i class="material-icons mt-2 iconSearch">search</i></button>
             </form>
@@ -119,9 +119,17 @@
 
 
     <div class="pelicula">
-        <img class="image" src="images/mision.jpg">
-        <div class="star"></div>
-        <div class="heart"></div>
+        <div>
+            <img class="image" src="images/mision.jpg">
+            <div class="iconos">
+                <a class="trailer-preview" href="#">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+                <a class="like cursorPointer" href="#">
+                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
         <h1 class="titulo">Mission Imposible - Fallout</h1>
         <p class="descripcion">2018 • Accion - Aventura • 148min • ★★★⛤⛤</p>
         <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
@@ -132,12 +140,13 @@
         <a class="vertrailer btn btn-primary" href="#" role="button">Trailer</a>
         <a class="verpelicula btn btn-primary" href="#" role="button">Ver</a>
     </div>
-    </div>
 
     <div class="comentario">
-        <h1>Comments</h1>
-        <a class="comentar btn btn-primary" href="#" role="button" data-toggle="modal"
-        data-target="#comentarModal">Comentar</a>
+        <div>
+            <a class="comentar btn btn-primary" href="#" role="button" data-toggle="modal"
+                data-target="#comentarModal">Comentar</a>
+            <h1>Comments</h1>
+        </div>
         <p>USER - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
             ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
