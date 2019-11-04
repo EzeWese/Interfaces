@@ -227,11 +227,11 @@ body {
   margin-top: 5px;
   margin-left: 1px;
 }
-.card-img {
-  /*-webkit-clip-path: inset(10% 0 20% 0);
-  clip-path: inset(10% 0 20% 0);*/
-  /*margin-top: -15%;*/
-}
+/*.card-img {
+  -webkit-clip-path: inset(10% 0 20% 0);
+  clip-path: inset(10% 0 20% 0);
+  /*margin-top: -15%;
+}*/
 .card-body {
   position: relative;
   margin-top: -30%;
