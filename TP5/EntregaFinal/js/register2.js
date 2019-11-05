@@ -45,8 +45,9 @@ function validateCardNumber() {
 }
 
 function validateCardExpiration() {
-    var cardExpirationInput = document.getElementById('inputCardExpiration').value;
-    if (cardExpirationInput != "") {
+    var cardExpirationInputMonth = document.getElementById('month').value;
+    var cardExpirationInputYear = document.getElementById('year').value;
+    if (cardExpirationInputMonth != "" || cardExpirationInputYear != "") {
         document.getElementById('cardExpirationErrorMessage').classList.add("hide");
     } else {
         document.getElementById('cardExpirationErrorMessage').classList.remove("hide");

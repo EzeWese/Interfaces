@@ -227,9 +227,7 @@ nav {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 body {
-  background-color: #006064;
-  
-  
+  background-color: #006064;  
 }
 .col-md-5, .description {
   padding: 0;
