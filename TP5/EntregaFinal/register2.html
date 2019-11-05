@@ -47,10 +47,10 @@
       <div class="fallbackDatePicker form-control">
         <p class="fallbackLabel">Vencimiento Tarjeta</p>
         <span>
-          <label for="month">Mes:</label>
-          <select id="month" name="month" required
-          onfocusout="validateCardExpiration()">
-            <option value="1" selected>1</option>
+          <select class="custom-select" id="inputCardExpirationMonth" name="month" required
+          onclick="validateCardExpiration()">
+            <option value="" selected>Mes</option>
+            <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -65,10 +65,10 @@
           </select>
         </span>
         <span>
-          <label for="year">Año:</label>
-          <select id="year" name="year"required
-          onfocusout="validateCardExpiration()">
-              <option value="2019" selected>2019</option>
+          <select class="custom-select" id="inputCardExpirationYear" name="year"required
+          onclick="validateCardExpiration()">
+              <option value="" selected>Año</option>
+              <option value="2019">2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
               <option value="2022">2022</option>
@@ -81,9 +81,10 @@
               <option value="2029">2029</option>
           </select>
         </span>
-        <p class="hide text-left textAlert font-weight-bold" id="cardExpirationErrorMessage">Ingrese un vencimiento de
-          tarjeta.</p>
+        
       </div>
+      <p class="hide text-left textAlert font-weight-bold" id="cardExpirationErrorMessage">Ingrese un vencimiento de
+          tarjeta.</p>
     </div>
 
 

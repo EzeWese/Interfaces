@@ -6,7 +6,11 @@ document.getElementById("inputCardNumber").addEventListener("keyup", function ()
     checkRegister2();
 });
 
-document.getElementById("inputCardExpiration").addEventListener("keyup", function () {
+document.getElementById("inputCardExpirationMonth").addEventListener("click", function () {
+    checkRegister2();
+});
+
+document.getElementById("inputCardExpirationYear").addEventListener("click", function () {
     checkRegister2();
 });
 
@@ -17,9 +21,10 @@ document.getElementById("inputCardCode").addEventListener("keyup", function () {
 function checkRegister2() {
     var cardNameInput = document.getElementById('inputCardName').value;
     var cardNumberInput = document.getElementById('inputCardNumber').value;
-    var cardExpirationInput = document.getElementById('inputCardExpiration').value;
+    var cardExpirationInputMonth = document.getElementById('inputCardExpirationMonth').value;
+    var cardExpirationInputMonth = document.getElementById('inputCardExpirationYear').value;
     var cardCodeInput = document.getElementById('inputCardCode').value;
-    if (cardNameInput != "" && cardNumberInput != "" && cardNumberInput.length == 16 && cardExpirationInput != "" && cardCodeInput != "" && cardCodeInput.length == 3) {
+    if (cardNameInput != "" && cardNumberInput != "" && cardNumberInput.length == 16 && inputCardExpirationMonth.value != "" && inputCardExpirationYear.value != "" && cardCodeInput != "" && cardCodeInput.length == 3) {
         document.getElementById('register2Button').removeAttribute("disabled");
     } else {
         document.getElementById('register2Button').setAttribute("disabled", null);
@@ -45,9 +50,9 @@ function validateCardNumber() {
 }
 
 function validateCardExpiration() {
-    var cardExpirationInputMonth = document.getElementById('month').value;
-    var cardExpirationInputYear = document.getElementById('year').value;
-    if (cardExpirationInputMonth != "" || cardExpirationInputYear != "") {
+    var cardExpirationInputMonth = document.getElementById('inputCardExpirationMonth').value;
+    var cardExpirationInputYear = document.getElementById('inputCardExpirationYear').value;
+    if (cardExpirationInputMonth != "" && cardExpirationInputYear != "") {
         document.getElementById('cardExpirationErrorMessage').classList.add("hide");
     } else {
         document.getElementById('cardExpirationErrorMessage').classList.remove("hide");

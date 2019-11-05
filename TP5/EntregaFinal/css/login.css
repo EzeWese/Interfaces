@@ -304,3 +304,18 @@ table {
 .faqTitle {
     color: black;
 }
+
+.custom-select {
+    background-color: rgba(0, 54, 58, .50);
+    border-color: var(--green-color);
+    color: white;
+    width: 40%;
+}
+
+.custom-select:focus {
+    border-color: var(--green-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
+    color: white;
+    width: 40%;
+}
