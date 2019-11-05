@@ -5,8 +5,14 @@
 
 .mySearchContainer {
     background-color: rgba(256, 256, 256, 0.3);
-    padding: 50px 100px 50px 100px;
+    padding: 3rem 4rem 3rem 4rem;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .mySearchContainer {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
 }
 
 .formMyAccount {
@@ -154,4 +160,13 @@ input::-webkit-inner-spin-button {
 .custom-range::-webkit-slider-thumb:active {
     opacity: 0.85;
     background-color: var(--cancel-color);
+}
+
+.searchButtonContainer{
+    display: flex;
+}
+
+#searchMovieButton {
+    margin: auto;
+    width: 50%;
 }
