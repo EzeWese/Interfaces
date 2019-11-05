@@ -17,6 +17,15 @@ body {
   bottom: 0px;
 }
 
+@media (max-width: 1024px) {
+  .footerHome {
+    position: static;
+  }
+  .div-faq{
+    margin-bottom: 30px;
+  }
+}
+
 .faqTitle {
   color: black;
 }
