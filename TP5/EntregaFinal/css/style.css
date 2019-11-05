@@ -9,7 +9,29 @@
     --accept-color: #01A39D;
     --modal-color: rgba(0, 54, 58, 0.9);
 }
- 
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
 body {
     font-family: "Open Sans";
 }
@@ -262,8 +284,8 @@ body {
 .trailer-preview {
   background-color: #FF551F;
   position: absolute;
-  top: 85%;
-  right: 110px;
+  top: 84%;
+  right: 90px;
   width: 68px;
   height: 68px;
   border-radius: 50%;
@@ -271,6 +293,7 @@ body {
   font-size: 28px;
   text-align: center;
   padding-top: 13px;
+  transform: scale(0.8);
 }
 .trailer-preview:hover, .trailer-preview:disabled, .trailer-preview:active, .trailer-preview:focus {
   background-color: #FF551F;
@@ -283,8 +306,8 @@ body {
 .like {
     background-color: #FF551F;
     position: absolute;
-    top: 85%;
-    right: 22px;
+    top: 84%;
+    right: 18px;
     width: 68px;
     height: 68px;
     border-radius: 50%;
@@ -292,6 +315,7 @@ body {
     font-size: 28px;
     text-align: center;
     padding-top: 13px;
+    transform: scale(0.8);
   }
   .like:hover, .like:disabled, .like:active, .like:focus {
     background-color: #FF551F;
