@@ -98,7 +98,7 @@
         </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -117,51 +117,66 @@
         </div>
     </div>
 
-
-    <div class="serie">
-        <div>
-            <div class="card-header header-icon-container">
-                <img class="image card-img" src="images/breakingbad.jpg" alt="Card image">
-            </div>
-            <div class="iconos">
-                <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                </a>
-                <a class="like cursorPointer" target="new">
-                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                </a>
+    <!-- SERIE -->
+    <div class="movieContainer">
+        <div class="row movieRow">
+                <div class="col-12 col-lg-3">
+                    <img class="cardImg" src="images/breakingbad.jpg" alt="Card image">
+                    <div class="">
+                        <a class="trailer-preview" href="#" target="new">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </a>
+                        <a class="like cursorPointer" target="new">
+                            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <h1 class="">Breaking Bad</h1>
+                    <p class="">2015 • Accion - Aventura • 5 temporadas • ★★★★⛤</p>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</p>
+                    <a class="btn btn-lg btn-primary btnCancel btnTrailer" href="#" role="button">Trailer</a>
+                    <a class="btn btn-lg btn-primary btnCancel btnMovie" href="#" role="button"><i class="fas fa-play"></i>  Ver Serie</a>
+                    <div class="selecciontemporada">
+                        <h1 class="capitulosTitle">Capitulos</h1>
+                        <button type="button" class="btn btn-lg btn-primary btnCancel btnTemporadas dropdown-toggle" data-toggle="dropdown">Temporadas</button>
+                        <ul class="dropdown-menu scrollable-menu" role="menu">
+                            <li class="temporadaItem"><a class="temporadaAnchor">Temporada 1</a></li>
+                            <li class="temporadaItem"><a class="temporadaAnchor">Temporada 2</a></li>
+                            <li class="temporadaItem"><a class="temporadaAnchor">Temporada 3</a></li>
+                            <li class="temporadaItem"><a class="temporadaAnchor">Temporada 4</a></li>
+                            <li class="temporadaItem"><a class="temporadaAnchor">Temporada 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 hide seriesList">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                            <img class="capitulo1" src="images/breaking1.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                            <img class="capitulo2" src="images/breaking2.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                            <img class="capitulo3" src="images/breaking3.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                            <img class="capitulo4" src="images/breaking4.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                            <img class="capitulo5" src="images/breaking1.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                            <img class="capitulo6" src="images/breaking2.jpg">
+                        </div>
+                    </div>    
+                </div>
             </div>
         </div>
-        <h1 class="titulo">Breaking Bad</h1>
-        <p class="descripcion">2015 • Accion - Aventura • 5 temporadas • ★★★★⛤</p>
-        <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquid ex ea commodi consequat. </p>
-        <a class="vertrailer btn btn-primary" href="#" role="button">Trailer</a>
-        <a class="verserie btn btn-primary" href="#" role="button">Ver</a>
-        <div class="selecciontemporada">
-            <h1 class="capitulos">Capitulos</h1>
-            <div class="temporadas btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Temporadas</button>
-                <ul class="dropdown-menu scrollable-menu" role="menu">
-                    <li><a href="?1">Temporada 1</a></li>
-                    <li><a href="?2">Temporada 2</a></li>
-                    <li><a href="?3">Temporada 3</a></li>
-                    <li><a href="?4">Temporada 4</a></li>
-                    <li><a href="?5">Temporada 5</a></li>
-                    <li><a href="?6">Temporada 6</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="listacapitulos">
-            <img class="capitulo1" src="images/breaking1.jpg">
-            <img class="capitulo2" src="images/breaking2.jpg">
-            <img class="capitulo3" src="images/breaking3.jpg">
-            <img class="capitulo4" src="images/breaking4.jpg">
-            <img class="capitulo5" src="images/breaking1.jpg">
-            <img class="capitulo6" src="images/breaking2.jpg">
-        </div>
-    </div>
 
     <!-- COMENTARIOS -->
     <div class="container mt-5 commentContainer">
@@ -240,6 +255,7 @@
 </body>
 
 <script src="js/heart.js"></script>
+<script src="js/serieResume.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>

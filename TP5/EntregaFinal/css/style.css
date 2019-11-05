@@ -292,7 +292,7 @@ body {
 .trailer-preview {
   background-color: #FF551F;
   position: absolute;
-  top: 84%;
+  top: 80%;
   right: 90px;
   width: 68px;
   height: 68px;
@@ -314,7 +314,7 @@ body {
 .like {
     background-color: #FF551F;
     position: absolute;
-    top: 84%;
+    top: 80%;
     right: 18px;
     width: 68px;
     height: 68px;
