@@ -294,3 +294,54 @@ input::-webkit-inner-spin-button {
     margin: auto;
     width: 50%;
 }
+
+.movieContainer {
+    background-color: rgba(256, 256, 256, 0.3);
+    margin: 3rem;
+}
+
+.movieRow {
+    padding: 3rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--cancel-color);
+    border-radius: 9px;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.btnTrailer {
+    width: 15%;
+}
+
+.btnMovie {
+    width: 20%;
+    margin-left: .5rem;
+}
+
+@media (max-width: 768px) {
+    .movieContainer {
+        margin: 1rem;
+    }
+    .movieRow {
+        padding: 1rem;
+    }
+    .btnComment {
+        width: 100%;
+    }
+    .btnTrailer {
+        width: 100%;
+    }
+    .btnMovie {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
