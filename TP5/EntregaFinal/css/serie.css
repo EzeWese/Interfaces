@@ -296,3 +296,77 @@ body {
     height: 393px;
     width: 469px;
 }
+
+.form-control {
+    background-color: rgba(0, 54, 58, .50);
+    border-color: var(--green-color);
+    color: white;
+}
+
+.form-control:focus {
+    border-color: var(--green-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-select {
+    background-color: rgba(0, 54, 58, .50);
+    border-color: var(--green-color);
+    color: white;
+}
+
+.custom-select:focus {
+    border-color: var(--green-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 54, 58, .50);
+    background-color: rgba(0, 54, 58, .50);
+    color: white;
+}
+
+.custom-select::placeholder {
+    color: white;
+}
+
+.btnComment {
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .btnComment {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .btnComment {
+        width: 100%;
+    }
+}
+
+.commentContainer {
+    background: var(--background-info-color);
+    border-radius: 3px;
+}
+
+.commentTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.btnSendComment {
+    margin: auto;
+    width: 50%;
+}

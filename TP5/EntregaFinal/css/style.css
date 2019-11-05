@@ -12,6 +12,7 @@
 
 html {
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 @include media-breakpoint-up(sm) {
@@ -153,6 +154,15 @@ nav {
 
 .modal-footer {
     border: 0px;
+}
+
+@media (max-width: 1024px) {
+  .modal-open {
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    padding-right: 0!important;
+  }
 }
 
 .close {
@@ -363,7 +373,6 @@ body {
 }
 
 .verMas {
-  background-color: #001751;
   margin-top: 50%;
 }
 

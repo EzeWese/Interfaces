@@ -143,30 +143,41 @@
         <a class="verpelicula btn btn-primary" href="#" role="button">Ver</a>
     </div>
 
-    <div class="comentario">
-        <div>
-            <a class="comentar btn btn-primary" href="#" role="button" data-toggle="modal"
+    <!-- COMENTARIOS -->
+    <div class="container mt-5 commentContainer">
+        <div class="row pt-3 pb-3 pl-3 pr-3">
+            <div class="col-6">
+                <h1 class="commentTitle">Comentarios</h1>
+            </div>
+            <div class="col-6 d-flex flex-row-reverse mb-2">
+                <a class="btn btn-lg btn-block btnCancel btnComment" href="#" role="button" data-toggle="modal"
                 data-target="#comentarModal">Comentar</a>
-            <h1>Comments</h1>
-        </div>
-        <p>USER - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-            ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
-        <p>USER2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-            ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
-        <p>USER3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-            ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
+            </div>
+            <div class="col-12">
+                <p>USER - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+                ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+            <div class="col-12">
+                <p>USER2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+                ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+            <div class="col-12">
+                <p>USER3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+                ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+     </div>
     </div>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <div class="modal fade" id="comentarModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div id="comentario" class="modal-content">
@@ -175,21 +186,19 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div class="usuario input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
-                        </div>
                         <input type="text" class="form-control" placeholder="Usuario" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
-                    <div class="calificacion form-group mb-3">
-                        <label for="exampleFormControlSelect1">Calificacion</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+                    <div class="form-label-group mb-3">
+                            <select class="custom-select" id="inputCalif">
+                                <option class="custom-select" selected >Calificación</option>
+                                <option class="custom-select" value="1">1</option>
+                                <option class="custom-select" value="2">2</option>
+                                <option class="custom-select" value="3">3</option>
+                                <option class="custom-select" value="3">4</option>
+                                <option class="custom-select" value="3">5</option>
+                            </select>
+                    
                     </div>
                     <div class="agregarcomentario input-group mb-3">
                         <input type="text" class="form-control" placeholder="Comentario"
@@ -197,7 +206,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btnEnviar" data-dismiss="modal">Enviar</button>
+                    <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment" data-dismiss="modal">Enviar</button>
                 </div>
             </div>
         </div>
@@ -210,6 +219,7 @@
     </footer>
 </body>
 
+<script src="js/heart.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
