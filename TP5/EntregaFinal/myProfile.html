@@ -120,7 +120,7 @@
     <div class="myAccountContainer">
       <h1>Cuenta</h1>
       <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
           <div class="form-label-group mt-1">
             <input type="text" id="inputName" class="form-control" placeholder="Nombre" value="Juan" required
               onfocusout="validateName()">
@@ -140,7 +140,7 @@
             <p class="hide text-left textAlert font-weight-bold" id="emailErrorMessage">Ingrese un email válido.</p>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <div class="form-label-group mt-1">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" value="12345678"
                   required onfocusout="validatePassword()">
@@ -149,7 +149,7 @@
                   8 carácteres.</p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <div class="form-label-group mt-1">
                 <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña"
                   value="12345678" required onfocusout="validatePassword2()">
@@ -174,20 +174,20 @@
             <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <button class="btn btn-lg btn-block btnCancel mt-3" type="submit" id="cancelMyAccountButton"
                 disabled>CANCELAR</button>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" id="acceptMyAccountButton"
                 disabled>CONTINUAR</button>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <div class="row">
             <div class="col-12">
-              <img src="images/gorila.jpg" class="imageMyAccount" id="imageMyAccount" alt="Profile Image">
+              <img src="images/gorila.jpg" class="imageMyAccount mt-3" id="imageMyAccount" alt="Profile Image">
             </div>
             <div class="col-12">
               <input id="uploadImageMyAccountButton" type="file" class="btn btn-lg btn-block btnCancel mt-3 inputFile"
@@ -203,16 +203,16 @@
 
     <div class="container-fluid mt-5">
       <h1 class="historialTitle">Historial</h1>
-      <div class="container-fluid mt-4">
+      <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
               <div class="card">
                 <a class="notHiperlink" href="movieResume.html">
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -220,14 +220,14 @@
                 </a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
               <div class="card">
                 <a class="notHiperlink" href="movieResume.html">
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -235,14 +235,14 @@
                 </a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
               <div class="card">
                 <a class="notHiperlink" href="movieResume.html">
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -250,14 +250,14 @@
                 </a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
               <div class="card">
                 <a class="notHiperlink" href="movieResume.html">
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -270,6 +270,46 @@
     </div>
 
   </main>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="calificarModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div id="calificacion" class="modal-content">
+              <div class="inputsCalificacion modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  <form id="form">
+                      <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="5">
+                          <!--
+                            --><label for="radio1">★</label>
+                          <!--
+                            --><input id="radio2" type="radio" name="estrellas" value="4">
+                          <!--
+                            --><label for="radio2">★</label>
+                          <!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3">
+                          <!--
+                            --><label for="radio3">★</label>
+                          <!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2">
+                          <!--
+                            --><label for="radio4">★</label>
+                          <!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1">
+                          <!--
+                            --><label for="radio5">★</label>
+                      </p>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
+                      data-dismiss="modal">Enviar</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <footer class="footerHome">
     <div class="mr-5">Copyright © 2019 Netflics</div>

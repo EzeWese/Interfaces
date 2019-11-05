@@ -147,7 +147,7 @@
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-3">
           <div class="row">
             <div class="col-12 text-center">
-              <label for="dateRange">Fecha Estreno:</label> <label id="output"></label>
+              <label for="dateRange" class="labelFecha">Fecha Estreno:</label> <label class="labelFecha" id="output"></label>
             </div>
             <div class="col-12 text-center divTest">
               <input id="a" type="range" min="1950" max="1984" value="0" class="inputTest custom-range custom-range1" />
@@ -172,8 +172,8 @@
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -187,8 +187,8 @@
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -202,8 +202,8 @@
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -217,8 +217,8 @@
                   <div class="card-header header-icon-container">
                     <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
                   </div>
-                  <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                   </a>
                   <a class="like cursorPointer" target="new">
                     <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
@@ -230,6 +230,46 @@
     </div>
 
   </main>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="calificarModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div id="calificacion" class="modal-content">
+              <div class="inputsCalificacion modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  <form id="form">
+                      <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="5">
+                          <!--
+                            --><label for="radio1">★</label>
+                          <!--
+                            --><input id="radio2" type="radio" name="estrellas" value="4">
+                          <!--
+                            --><label for="radio2">★</label>
+                          <!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3">
+                          <!--
+                            --><label for="radio3">★</label>
+                          <!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2">
+                          <!--
+                            --><label for="radio4">★</label>
+                          <!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1">
+                          <!--
+                            --><label for="radio5">★</label>
+                      </p>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
+                      data-dismiss="modal">Enviar</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <footer class="footerHome">
     <div class="mr-5">Copyright © 2019 Netflics</div>

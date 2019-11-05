@@ -381,3 +381,12 @@ body {
 h3, h1 {
   color: white;
 }
+
+.verMas:not(:disabled):not(.disabled).active,
+.verMas:not(:disabled):not(.disabled):active,
+.show>.verMas.dropdown-toggle {
+    background-color: var(--cancel-color);
+    border-radius: 9px;
+    border: 0px;
+    color: #FFFFFF;
+}
