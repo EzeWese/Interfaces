@@ -4,7 +4,7 @@
     --green-color: #428E92;
     --green2-color: #2E7377;
     --green3-color: #006064;
-    --modal-color: rgba(0, 54, 58, 0.9);
+    --calificar-color: #428E92;
     --boton-color: #FF551F;
 }
 
@@ -121,19 +121,19 @@ body {
 }
 
 .selecciontemporada {
-    margin-top: 5px;
-    margin-left: 25%;
     display: flex;
+    margin-top: 1rem;
 }
 
 
-.capitulos {
+.capitulosTitle {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
-
     color: #FFFFFF;
+    width: 15%;
+    margin-top: 1rem;
 }
 
 .scrollable-menu {
@@ -142,10 +142,9 @@ body {
     overflow-x: hidden;
 }
 
-.temporadas {
-    width: 156px;
-    height: 39.29px;
-    margin-left: 10px;
+.temporadasInput {
+    width: 20%;
+    margin-left: .5rem;
 }
 
 .temporadas,
@@ -176,7 +175,7 @@ body {
     width: 160.28px;
     height: 200.22px;
     object-fit: cover;
-    padding-left: 10px;
+    margin: auto;
 }
 
 .listacapitulos {
@@ -288,7 +287,8 @@ body {
     color: #FFFFFF;
 }
 
-.inputsComentario {
+.inputsComentario,
+.inputsCalificacion {
     display: block;
 }
 
@@ -369,4 +369,139 @@ input::-webkit-inner-spin-button {
 .btnSendComment {
     margin: auto;
     width: 50%;
+}
+
+
+.movieContainer {
+    background-color: rgba(256, 256, 256, 0.3);
+    margin: 3rem;
+}
+
+.movieRow {
+    padding: 3rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--cancel-color);
+    border-radius: 9px;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.btnTrailer {
+    width: 15%;
+}
+
+.btnMovie {
+    width: 20%;
+    margin-left: .5rem;
+}
+
+.btnTemporadas{
+    width: 20%;
+    margin-left: .5rem;
+}
+
+@media (max-width: 768px) {
+    .movieContainer {
+        margin: 1rem;
+    }
+    .movieRow {
+        padding: 1rem;
+    }
+    .capitulosTitle {
+        width: 100%;
+    }
+    .btnComment {
+        width: 100%;
+    }
+    .btnTrailer {
+        width: 100%;
+    }
+    .btnMovie {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .btnTemporadas{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
+
+.temporadaAnchor {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.temporadaAnchor:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.temporadaItem {
+    background-color: var(--cancel-color);
+    border: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.seriesContainer {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: lightgrey;
+}
+
+.clasificacion {
+    direction: rtl;
+    /* right to left */
+    unicode-bidi: bidi-override;
+    /* bidi de bidireccional */
+}
+
+label:hover,
+label:hover~label {
+    color: yellow;
+}
+
+input[type="radio"]:checked~label {
+    color: yellow;
+}
+
+#form label {
+    font-size: 50px;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#calificacion {
+    background: var(--calificar-color);
 }

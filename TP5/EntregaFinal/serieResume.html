@@ -98,7 +98,7 @@
         </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -117,49 +117,69 @@
         </div>
     </div>
 
-
-    <div class="serie">
-        <div>
-            <div class="card-header header-icon-container">
-                <img class="image card-img" src="images/breakingbad.jpg" alt="Card image">
+    <!-- SERIE -->
+    <div class="movieContainer">
+        <div class="row movieRow">
+            <div class="col-12 col-lg-3">
+                <img class="cardImg" src="images/breakingbad.jpg" alt="Card image">
+                <div class="">
+                    <a class="trailer-preview" href="#" target="new">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </a>
+                    <a class="like cursorPointer" target="new">
+                        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-            <div class="iconos">
-                <a class="trailer-preview" href="#" target="new">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                </a>
-                <a class="like cursorPointer" target="new">
-                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                </a>
+            <div class="col-12 col-lg-9">
+                <h1 class="">Breaking Bad</h1>
+                <p class="">2015 • Accion - Aventura • 5 temporadas • ★★★★⛤</p>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut
+                    aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+                <a class="btn btn-lg btn-primary btnCancel btnTrailer" href="#" role="button">Trailer</a>
+                <a class="btn btn-lg btn-primary btnCancel btnMovie" href="#" role="button"><i class="fas fa-play"></i>
+                    Ver Serie</a>
+                <div class="selecciontemporada">
+                    <h1 class="capitulosTitle">Capitulos</h1>
+                    <button type="button" class="btn btn-lg btn-primary btnCancel btnTemporadas dropdown-toggle"
+                        data-toggle="dropdown">Temporadas</button>
+                    <ul class="dropdown-menu scrollable-menu" role="menu">
+                        <li class="temporadaItem"><a class="temporadaAnchor">Temporada 1</a></li>
+                        <li class="temporadaItem"><a class="temporadaAnchor">Temporada 2</a></li>
+                        <li class="temporadaItem"><a class="temporadaAnchor">Temporada 3</a></li>
+                        <li class="temporadaItem"><a class="temporadaAnchor">Temporada 4</a></li>
+                        <li class="temporadaItem"><a class="temporadaAnchor">Temporada 5</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <h1 class="titulo">Breaking Bad</h1>
-        <p class="descripcion">2015 • Accion - Aventura • 5 temporadas • ★★★★⛤</p>
-        <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquid ex ea commodi consequat. </p>
-        <a class="vertrailer btn btn-primary" href="#" role="button">Trailer</a>
-        <a class="verserie btn btn-primary" href="#" role="button">Ver</a>
-        <div class="selecciontemporada">
-            <h1 class="capitulos">Capitulos</h1>
-            <div class="temporadas btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Temporadas</button>
-                <ul class="dropdown-menu scrollable-menu" role="menu">
-                    <li><a href="?1">Temporada 1</a></li>
-                    <li><a href="?2">Temporada 2</a></li>
-                    <li><a href="?3">Temporada 3</a></li>
-                    <li><a href="?4">Temporada 4</a></li>
-                    <li><a href="?5">Temporada 5</a></li>
-                    <li><a href="?6">Temporada 6</a></li>
-                </ul>
+            <div class="col-12 hide seriesList">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                        <img class="capitulo1" src="images/breaking1.jpg">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                        <img class="capitulo2" src="images/breaking2.jpg">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                        <img class="capitulo3" src="images/breaking3.jpg">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                        <img class="capitulo4" src="images/breaking4.jpg">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                        <img class="capitulo5" src="images/breaking1.jpg">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 seriesContainer">
+                        <img class="capitulo6" src="images/breaking2.jpg">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="listacapitulos">
-            <img class="capitulo1" src="images/breaking1.jpg">
-            <img class="capitulo2" src="images/breaking2.jpg">
-            <img class="capitulo3" src="images/breaking3.jpg">
-            <img class="capitulo4" src="images/breaking4.jpg">
-            <img class="capitulo5" src="images/breaking1.jpg">
-            <img class="capitulo6" src="images/breaking2.jpg">
         </div>
     </div>
 
@@ -171,66 +191,119 @@
             </div>
             <div class="col-6 d-flex flex-row-reverse mb-2">
                 <a class="btn btn-lg btn-block btnCancel btnComment" href="#" role="button" data-toggle="modal"
-                data-target="#comentarModal">Comentar</a>
+                    data-target="#comentarModal">Comentar</a>
             </div>
             <div class="col-12">
-                <p>USER - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-                ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</p>
+                <p>USER - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquid ex
+                    ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id
+                    est laborum.</p>
             </div>
             <div class="col-12">
-                <p>USER2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-                ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</p>
+                <p>USER2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+                    labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquid ex
+                    ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id
+                    est laborum.</p>
             </div>
             <div class="col-12">
-                <p>USER3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-                ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</p>
+                <p>USER3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+                    labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquid ex
+                    ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id
+                    est laborum.</p>
             </div>
         </div>
     </div>
 
     <!-- MODAL -->
     <div class="modal fade" id="comentarModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div id="comentario" class="modal-content">
-                    <div class="inputsComentario modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="usuario input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-                        <div class="form-label-group mb-3">
-                                <select class="custom-select" id="inputCalif">
-                                    <option class="custom-select" selected >Calificación</option>
-                                    <option class="custom-select" value="1">1</option>
-                                    <option class="custom-select" value="2">2</option>
-                                    <option class="custom-select" value="3">3</option>
-                                    <option class="custom-select" value="3">4</option>
-                                    <option class="custom-select" value="3">5</option>
-                                </select>
-                        
-                        </div>
-                        <div class="agregarcomentario input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Comentario"
-                                aria-describedby="inputGroup-sizing-sm">
-                        </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div id="comentario" class="modal-content">
+                <div class="inputsComentario modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="usuario input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment" data-dismiss="modal">Enviar</button>
+                    <div class="form-label-group mb-3">
+                        <select class="custom-select" id="inputCalif">
+                            <option class="custom-select" selected>Calificación</option>
+                            <option class="custom-select" value="1">1</option>
+                            <option class="custom-select" value="2">2</option>
+                            <option class="custom-select" value="3">3</option>
+                            <option class="custom-select" value="3">4</option>
+                            <option class="custom-select" value="3">5</option>
+                        </select>
+
                     </div>
+                    <div class="agregarcomentario input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Comentario"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
+                        data-dismiss="modal">Enviar</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="calificarModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div id="calificacion" class="modal-content">
+                <div class="inputsCalificacion modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <form id="form">
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <!--
+                                  --><label for="radio1">★</label>
+                            <!--
+                                  --><input id="radio2" type="radio" name="estrellas" value="4">
+                            <!--
+                                  --><label for="radio2">★</label>
+                            <!--
+                                  --><input id="radio3" type="radio" name="estrellas" value="3">
+                            <!--
+                                  --><label for="radio3">★</label>
+                            <!--
+                                  --><input id="radio4" type="radio" name="estrellas" value="2">
+                            <!--
+                                  --><label for="radio4">★</label>
+                            <!--
+                                  --><input id="radio5" type="radio" name="estrellas" value="1">
+                            <!--
+                                  --><label for="radio5">★</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
+                        data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footerHome">
         <div class="mr-5">Copyright © 2019 Netflics</div>
