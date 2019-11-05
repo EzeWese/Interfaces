@@ -8,6 +8,7 @@
     --alert-color: #DC3545;
     --accept-color: #01A39D;
     --modal-color: rgba(0, 54, 58, 0.9);
+    --orange-color: #FF551F;
 }
 
 html {
@@ -52,24 +53,24 @@ nav {
 }
 
 .dropdown-menu {
-    background-color: var(--green-color);
+    background-color: var(--main-bg-color);
     padding: 0px;
 }
 
 .menuItem {
-    background-color: var(--green-color);
-    border: 1px solid var(--green2-color);
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--orange-color);
 }
 
 .menuItem:hover {
-    background-color: var(--green-color);
+    background-color: var(--main-bg-color);
     opacity: .75;
 }
 
 /* FILTER */
 
 .dropdown-divider{
-    border: 1px solid var(--green2-color);
+    border: 1px solid var(--orange-color);
 }
 
 /* NOTIF + FAV */
@@ -85,13 +86,11 @@ nav {
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    color: #000000;
-    text-shadow: -1px 0 var(--green2-color), 0 1px var(--green2-color), 1px 0 var(--green2-color), 0 -1px var(--green2-color);
+    color: #ffffff;
 }
 
 .notifFavText:active{
     color: #000000;
-    text-shadow: -1px 0 var(--green2-color), 0 1px var(--green2-color), 1px 0 var(--green2-color), 0 -1px var(--green2-color);
 }
 
 /* MY ACCOUNT */
@@ -101,7 +100,7 @@ nav {
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 .myAccountText:active{
     font-style: normal;
