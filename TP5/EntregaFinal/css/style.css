@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 :root {
     --main-bg-color: #001751;
@@ -38,7 +40,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* NAVBAR */
@@ -226,8 +228,6 @@ nav {
     text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 body {
   background-color: #006064;  
 }

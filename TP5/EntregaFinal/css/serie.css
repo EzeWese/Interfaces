@@ -11,7 +11,7 @@
 body {
     background: var(--green3-color);
     overflow-x: hidden;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footerHome {
