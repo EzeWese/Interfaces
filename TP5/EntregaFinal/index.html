@@ -8,45 +8,131 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/login.css">
   <script src="https://kit.fontawesome.com/c5d8d8beeb.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="favicon/favicon.png" />
   <title>Netflics</title>
 </head>
 
-<body class="text-center">
-  <h1 class="animated jackInTheBox backgroundText">NETFLICS</h1>
-  <form class="animated slideInLeft form-signin" action="home.html">
-    <label for="inputUser" class="sr-only">Usuario</label>
-    <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus
-      onfocusout="validateUser()">
-    <p class="hide mt-1 text-left textAlert font-weight-bold" id="userErrorMessage">Ingrese un usuario.</p>
-    <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required
-      onfocusout="validatePassword()">
-    <p class="hide mt-1 text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de 8
-      carácteres.</p>
-    <h3 class="h5 mb-3 font-weight-normal"><a href="forgotPassword.html" class="loginAnchor textOpacity60">Olvidaste tu
-        contraseña?</a></h3>
-    <button class="btn btn-lg btn-primary btn-block btnAccept" type="submit" id="loginButton" disabled>LOGIN</button>
-    <div class="checkbox mt-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Recordarme
-      </label>
+<body>
+
+  <div class="backgroundimage">
+      <a class="btn btn-lg btn-primary btnIniciar" href="login.html" role="button">Iniciar Sesión</a>
+    <img class="netflics" src="images/netflics.png" alt="netflics">
+    <p class="textoprincipal">Peliculas ilimitadas, muchas series, en cualquier lugar y en cualquier momento!</p>
+    <a class="btn btn-lg btn-primary btnRegistro" href="register.html" role="button">COMENZAR AHORA</a>
+  </div>
+
+  <div class="mensajes">
+    <div class="izq">
+      <h1>Disfruta en tu TV</h1>
+      <p>Puede ver en su smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y mas.</p>
     </div>
-    <h3 class="h5 mb-3 font-weight-bold text-left"><a href="register.html" class="loginAnchor">Nuevo en Netflics?</a>
-    </h3>
-    <h3 class="h5 mb-3 font-weight-bold text-left"><a href="FAQlogin.html" class="loginAnchor">Más Información</a></h3>
-  </form>
+    <div class="der">
+      <h1>Disfruta en el dispositivo que mas quieras</h1>
+      <p>Peliculas y programas ilimitados en su teléfono, tablet, computadora y TV sin costo extra.</p>
+    </div>
+    <div class="izq">
+      <h1>Recibe sugerencias personalizadas</h1>
+      <p>Mientras mas vea mas recomendaciones de lo que le gustan apareceran.</p>
+    </div>
+  </div>
+
+  <div class="masinformacion">
+    <h1 class="informacion">Mas información</h1>
+    <h2>Facturación y pagos de Netflics:</h2>
+    <p>Netflics es un servicio prepago por suscripción que te permite ver series y películas ilimitadas en todos tus
+      dispositivos, como tu laptop, TV, teléfono y tableta. La membresía de los usuarios de Netflix se cobrará
+      automáticamente de forma mensual en la fecha en la que se suscribieron al servicio. Continúa leyendo para obtener
+      más información sobre los precios, las formas de pago, los cargos y muchos más temas relacionados con Netflics.
+    </p>
+    <h2>¿Cuánto cuesta Netflics?:</h2>
+    <p>Existen varios planes que se adaptan a sus necesidades.</p>
+    <table class="table table-borderless table-responsive-md">
+      <thead>
+        <tr>
+          <th scope="col" class="attributeHeader"></th>
+          <th scope="col" class="packHeader packBackground packBackgroundTop basicSelector">Básico</th>
+          <th scope="col" class="packHeader packBackground packBackgroundTop standarSelector">Estándar</th>
+          <th scope="col" class="packHeader packBackground packBackgroundTop premiumSelector">Premium</th>
+          <th scope="col" class="packHeader packBackground packBackgroundTop proSelector">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="borderTable">
+          <th scope="row" class="text-left packRowHeader">Precio</th>
+          <td class="packText packBackground basicSelector">$149</td>
+          <td class="packText packBackground standarSelector">$179</td>
+          <td class="packText packBackground premiumSelector">$269</td>
+          <td class="packText packBackground proSelector">$369</td>
+        </tr>
+        <tr class="borderTable">
+          <th scope="row" class="text-left packRowHeader">Ultra HD</th>
+          <td class="packTextNo font-weight-bold packBackground basicSelector">NO</td>
+          <td class="packTextNo font-weight-bold packBackground standarSelector">NO</td>
+          <td class="packText packBackground premiumSelector">SI</td>
+          <td class="packText packBackground proSelector">SI</td>
+        </tr>
+        <tr class="borderTable">
+          <th scope="row" class="text-left packRowHeader">Pantallas que puedes ver al mismo tiempo</th>
+          <td class="packText packBackground basicSelector">1</td>
+          <td class="packText packBackground standarSelector">2</td>
+          <td class="packText packBackground premiumSelector">2</td>
+          <td class="packText packBackground proSelector">4</td>
+        </tr>
+        <tr class="borderTable">
+          <th scope="row" class="text-left packRowHeader">Mirar en tu laptop, TV, celular y tablet</th>
+          <td class="packText packBackground basicSelector">SI</td>
+          <td class="packText packBackground standarSelector">SI</td>
+          <td class="packText packBackground premiumSelector">SI</td>
+          <td class="packText packBackground proSelector">SI</td>
+        </tr>
+        <tr class="borderTable">
+          <th scope="row" class="text-left packRowHeader">Peliculas y programas de TV ilimitadas</th>
+          <td class="packTextNo font-weight-bold packBackground basicSelector">NO</td>
+          <td class="packText packBackground standarSelector">SI</td>
+          <td class="packText packBackground premiumSelector">SI</td>
+          <td class="packText packBackground proSelector">SI</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-left packRowHeader">Cancelar en cualquier momento</th>
+          <td class="packText packBackground packBackgroundBot basicSelector">SI</td>
+          <td class="packText packBackground packBackgroundBot standarSelector">SI</td>
+          <td class="packText packBackground packBackgroundBot premiumSelector">SI</td>
+          <td class="packText packBackground packBackgroundBot proSelector">SI</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>¿Cómo puedo ver mi historial de facturación de Netflics o mi factura mensual?</h2>
+    <p>Si deseas ver tu historial de facturación, haz clic en Detalles de facturación en la página Cuenta. También
+      puedes seleccionar algunas fechas individuales que desees consultar e imprimir la factura correspondiente a ese
+      mes.</p>
+    <h2>¿Cómo cancelo Netflics?</h2>
+    <p>Lamentamos que quieras irte, pero, si necesitas cancelar tu cuenta y finalizar tu membresía, solo selecciona el
+      botón Cancelar membresía en la página de tu Cuenta.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div>
     <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i
         class="fab fa-instagram footerHomeIcons"></i><i class="fab fa-twitter-square footerHomeIcons"></i></div>
   </footer>
-  <script src="js/login.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>

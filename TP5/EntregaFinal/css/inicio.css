@@ -1,0 +1,142 @@
+:root {
+    --main-bg-color: #001751;
+    --background-info-color: rgba(255, 255, 255, 0.3);
+    --green-color: #428E92;
+    --green2-color: #2E7377;
+    --green3-color: #006064;
+    --calificar-color: #428E92;
+    --boton-color: #FF551F;
+    --boton-hover: #F04610;
+}
+
+
+
+.footerLogin {
+    width: 100%;
+    height: 75px;
+    background-color: var(--login-footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+.backgroundimage {
+    width: 100%;
+    height: 100%;
+    background: url("../images/background.jpg");
+    z-index: 0;
+}
+
+.netflics {
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 70%;
+    z-index: 10;
+}
+
+.textoprincipal {
+    margin-top: 2%;
+    z-index: 10;
+    margin-left: 32%;
+    width: 550px;
+    height: 161px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mensajes , .mensajes div{
+    margin-top: 3%;
+}
+
+.mensajes div p {
+    color: white;
+    font-size: 18px;
+}
+
+.masinformacion {
+    margin: 8%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+}
+
+.der {
+    float: right;
+    margin-right: 8%;
+}
+
+.izq {
+    margin-left: 8%;
+    float: left;
+}
+
+.informacion {
+    margin-top: 2%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #000000;
+    margin-left: 40%;
+}
+
+.masinformacion h2 {
+    color: black;
+}
+
+.masinformacion p , .masinformacion h2{
+    margin-left: 2%;
+}
+
+.masinformacion h2{
+    margin-top: 30px;
+}
+
+.table{
+    margin-top: 0% !important;
+}
+
+
+.btnIniciar,
+.btnRegistro {
+    margin-top: 1%;
+    background-color: var(--boton-color);
+    border-radius: 9px;
+    border-color: var(--boton-color);
+}
+
+.btnIniciar:hover,
+.btnRegistro:hover {
+    background-color: var(--boton-hover);
+}
+
+.btnIniciar a,
+.btnRegistro a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.btnIniciar {
+    margin-left: 80%;
+}
+
+.btnRegistro {
+    margin-left: 40%;
+    width: 280px;
+    margin-bottom: 10%;
+}
