@@ -69,7 +69,8 @@ nav {
 
 .menuItem:hover {
     background-color: var(--main-bg-color);
-    opacity: .75;
+    opacity: .9;
+    color: rgb(220, 220, 220);
 }
 
 /* FILTER */
@@ -186,7 +187,6 @@ nav {
 
 .btnCancel:hover{
     background-color: var(--cancel-color);
-    opacity: .75;
     color: #FFFFFF;
 }
 
@@ -220,7 +220,6 @@ nav {
 
 .btnAccept:hover {
     background-color: var(--accept-color);
-    opacity: .75;
 }
 
 .btnAccept a {
@@ -594,7 +593,7 @@ input[type="radio"] {
 }
 
 .star:hover,
-.star:hover~label {
+.star:hover~.star {
   color: yellow;
 }
 
@@ -622,4 +621,16 @@ input[type="radio"]:checked~.star {
 
 .inputsCalificacion {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .white , .overlayText h1 .carousel-caption p , .continuarMirando{
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .white , .overlayText h1 .carousel-caption p, .continuarMirando{
+    font-size: 15px !important;
+  }
 }

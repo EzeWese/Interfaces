@@ -6,6 +6,7 @@
     --green3-color: #006064;
     --calificar-color: #428E92;
     --boton-color: #FF551F;
+    --boton-hover: rgb(221, 63, 15);
 }
 
 body {
@@ -98,8 +99,7 @@ body {
 .vertrailer:hover,
 .verserie:hover,
 .comentar:hover {
-    background-color: var(--boton-color);
-    opacity: .9
+    background-color: var(--boton-hover);
 }
 
 .vertrailer a,
@@ -132,7 +132,7 @@ body {
     font-size: 24px;
     line-height: 33px;
     color: #FFFFFF;
-    width: 15%;
+    width: 12%;
     margin-top: 1rem;
 }
 
@@ -264,7 +264,7 @@ body {
 
 .agregarcomentario input {
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .usuario input,
@@ -278,24 +278,17 @@ body {
     border-radius: 9px;
     border: 0px;
     width: 263px;
-    ;
     color: #FFFFFF;
 }
 
 .btnEnviar:hover {
-    background-color: var(--boton-color);
-    opacity: .90;
+    background-color: var(--boton-hover);
     color: #FFFFFF;
 }
 
 .inputsComentario,
 .inputsCalificacion {
     display: block;
-}
-
-#comentario {
-    height: 393px;
-    width: 469px;
 }
 
 .form-control {
@@ -404,7 +397,7 @@ input::-webkit-inner-spin-button {
     margin-left: .5rem;
 }
 
-.btnTemporadas{
+.btnTemporadas {
     width: 20%;
     margin-left: .5rem;
 }
@@ -413,24 +406,30 @@ input::-webkit-inner-spin-button {
     .movieContainer {
         margin: 1rem;
     }
+
     .movieRow {
         padding: 1rem;
     }
+
     .capitulosTitle {
         width: 100%;
     }
+
     .btnComment {
         width: 100%;
     }
+
     .btnTrailer {
         width: 100%;
     }
+
     .btnMovie {
         width: 100%;
         margin-left: 0px;
         margin-top: 5px;
     }
-    .btnTemporadas{
+
+    .btnTemporadas {
         width: 100%;
         margin-left: 0px;
         margin-top: 5px;
@@ -469,7 +468,7 @@ input[type="radio"] {
     display: none;
 }
 
-label {
+.star {
     color: lightgrey;
 }
 
@@ -480,16 +479,16 @@ label {
     /* bidi de bidireccional */
 }
 
-label:hover,
-label:hover~label {
+.star:hover,
+.star:hover~label {
     color: yellow;
 }
 
-input[type="radio"]:checked~label {
+input[type="radio"]:checked~.star {
     color: yellow;
 }
 
-#form label {
+#form .star {
     font-size: 50px;
 }
 
@@ -505,4 +504,8 @@ input[type="radio"]:checked~label {
 
 #calificacion {
     background: var(--calificar-color);
+}
+
+.labelComent {
+    color: #FFFFFF;
 }

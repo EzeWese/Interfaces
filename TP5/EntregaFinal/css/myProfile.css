@@ -130,7 +130,7 @@ input[type="radio"] {
     display: none;
 }
 
-label {
+.star {
     color: lightgrey;
 }
 
@@ -141,16 +141,16 @@ label {
     /* bidi de bidireccional */
 }
 
-label:hover,
-label:hover~label {
+.star:hover,
+.star:hover~.star {
     color: yellow;
 }
 
-input[type="radio"]:checked~label {
+input[type="radio"]:checked~.star {
     color: yellow;
 }
 
-#form label {
+#form .star {
     font-size: 50px;
 }
 
@@ -170,4 +170,19 @@ input[type="radio"]:checked~label {
 
 .inputsCalificacion {
     display: block;
+}
+
+.cancelarSubscripcion{
+    background-color: var(--alert-color);
+    width: 140px;
+    margin-top: 20%;
+    margin-left: 300%;
+}
+
+.cancelarSubscripcion:hover{
+    background-color: var(--alert-color);
+}
+
+.cancelarPopup{
+    background-color: var(--alert-color);
 }
