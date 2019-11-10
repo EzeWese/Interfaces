@@ -1,10 +1,6 @@
 :root {
-    --main-bg-color: #001751;
     --background-info-color: rgba(255, 255, 255, 0.3);
-    --green-color: #428E92;
-    --green2-color: #2E7377;
     --green3-color: #006064;
-    --calificar-color: #428E92;
     --boton-color: #FF551F;
     --boton-hover: #F04610;
 }
@@ -28,21 +24,17 @@
 
 .backgroundimage {
     width: 100%;
-    height: 100%;
     background: url("../images/background.jpg");
-    z-index: 0;
 }
 
 .netflics {
     margin-top: 5%;
     margin-left: 15%;
     width: 70%;
-    z-index: 10;
 }
 
 .textoprincipal {
-    margin-top: 2%;
-    z-index: 10;
+    margin-top: 4%;
     margin-left: 32%;
     width: 550px;
     height: 161px;
@@ -53,11 +45,13 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFF;    
+    -webkit-text-stroke: 1px black;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.mensajes , .mensajes div{
+.mensajes,
+.mensajes div {
     margin-top: 3%;
 }
 
@@ -96,16 +90,18 @@
     color: black;
 }
 
-.masinformacion p , .masinformacion h2{
+.masinformacion p,
+.masinformacion h2 {
     margin-left: 2%;
 }
 
-.masinformacion h2{
+.masinformacion h2 {
     margin-top: 30px;
 }
 
-.table{
+.table {
     margin-top: 0% !important;
+    margin-bottom: 0% !important;
 }
 
 
@@ -138,5 +134,5 @@
 .btnRegistro {
     margin-left: 40%;
     width: 280px;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }

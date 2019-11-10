@@ -14,3 +14,7 @@
 .form-control::placeholder {
     color: white;
 }
+
+.like{
+    right: 38% !important;
+}

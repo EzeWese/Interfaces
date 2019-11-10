@@ -17,28 +17,31 @@
   <title>Netflics</title>
 </head>
 
-<body class="text-center">
-  <h1 class="animated jackInTheBox backgroundText">NETFLICS</h1>
-  <form class="animated slideInLeft form-signin" action="home.html">
-    <label for="inputUser" class="sr-only">Usuario</label>
-    <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus
-      onfocusout="validateUser()">
-    <p class="hide mt-1 text-left textAlert font-weight-bold" id="userErrorMessage">Ingrese un usuario.</p>
-    <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required
-      onfocusout="validatePassword()">
-    <p class="hide mt-1 text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de 8
-      carácteres.</p>
-    <h3 class="h5 mb-3 font-weight-normal"><a href="forgotPassword.html" class="loginAnchor textOpacity60">Olvidaste tu
-        contraseña?</a></h3>
-    <button class="btn btn-lg btn-primary btn-block btnAccept" type="submit" id="loginButton" disabled>LOGIN</button>
-    <div class="checkbox mt-3">
-        <input type="checkbox" value="remember-me"> Recordarme
-    </div>
-    <h3 class="h5 mb-3 font-weight-bold text-left"><a href="register.html" class="loginAnchor">Nuevo en Netflics?</a>
-    </h3>
-    <h3 class="h5 mb-3 font-weight-bold text-left"><a href="FAQlogin.html" class="loginAnchor">Más Información</a></h3>
-  </form>
+<body>
+  <div class="backgroundimage">
+    <a href="index.html"><img class="logo" src="images/logo.svg" alt="Logo"></a>
+    <form class="animated slideInLeft form-signin" action="home.html">
+      <h3 class="font-weight-bold">Iniciar Sesión</h3>
+      <label class="font-weight-bold">Usuario</label>
+      <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus
+        onfocusout="validateUser()">
+      <p class="hide mt-1 text-left textAlert font-weight-bold" id="userErrorMessage">Ingrese un usuario.</p>
+      <label class="font-weight-bold">Contraseña</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required
+        onfocusout="validatePassword()">
+      <p class="hide mt-1 text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de 8
+        carácteres.</p>
+      <button class="btn btn-lg btn-primary btn-block btnAccept" type="submit" id="loginButton" disabled>LOGIN</button>
+      <div>
+        <div class="checkbox mt-3">
+          <input type="checkbox" value="remember-me"> Recordarme
+        </div>
+        <p class="der font-weight-normal"><a href="forgotPassword.html" class="loginAnchor textOpacity60">Olvidaste
+            tu contraseña?</a></p>
+      </div>
+      <p class="mb-3 register"><span class="font-weight-bold"> Nuevo en Netflics?</span><a href="register.html" class="loginAnchor">Registrate ya</a></p>
+    </form>
+  </div>
   <footer class="footerLogin">
     <div class="mr-5">Copyright © 2019 Netflics</div>
     <div class="ml-5 letterSpacing-4"><i class="fab fa-facebook-square footerHomeIcons"></i><i

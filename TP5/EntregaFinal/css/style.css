@@ -380,7 +380,7 @@ body {
   background-color: #FF3D00;
 }
 
-h3, h1,h2 {
+.white {
   color: white;
 }
 
@@ -493,7 +493,6 @@ p.overview {
   font-weight: 600;
   color: #fff;
   overflow: hidden;
-  font-family: Poppins, sans-serif;
 }
 .front:before {
   position: absolute;
@@ -583,7 +582,7 @@ input[type="radio"] {
   display: none;
 }
 
-label {
+.star {
   color: lightgrey;
 }
 
@@ -594,16 +593,16 @@ label {
   /* bidi de bidireccional */
 }
 
-label:hover,
-label:hover~label {
+.star:hover,
+.star:hover~label {
   color: yellow;
 }
 
-input[type="radio"]:checked~label {
+input[type="radio"]:checked~.star {
   color: yellow;
 }
 
-#form label {
+#form .star {
   font-size: 50px;
 }
 
