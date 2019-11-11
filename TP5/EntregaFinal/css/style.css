@@ -14,6 +14,8 @@
     --modal-color: rgba(0, 54, 58, 0.9);
     --orange-color: #FF551F;
     --calificar-color: #428E92;
+    --boton-color: #FF551F;
+    --boton-hover: rgb(221, 63, 15);
 }
 
 html {
@@ -205,7 +207,7 @@ nav {
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-    background-color: var(--accept-color);
+    background-color: var(--boton-color);
     border-radius: 9px;
     border: 0px;
     color: #FFFFFF;
@@ -225,6 +227,30 @@ nav {
 .btnAccept a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.buttonGeneral {
+  background-color: var(--boton-color);
+  border-radius: 9px;
+  border: 0px;
+  color: #FFFFFF;
+}
+
+
+.buttonGeneral:active{
+  background-color: var(--boton-hover);
+  border-radius: 9px;
+  border: 0px;
+  color: #FFFFFF;
+}
+
+.buttonGeneral:hover {
+  background-color: var(--boton-hover);
+}
+
+.buttonGeneral a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 body {
@@ -265,7 +291,6 @@ body {
 }*/
 .card-body {
   position: relative;
-  margin-top: -30%;
   color: #9FA7A9;
 }
 .card-body .card-title {
@@ -273,7 +298,7 @@ body {
   color: #414345;
 }
 .card-body .card-text {
-  margin-top: 8px;
+  margin-top: 5px;
   font-weight: 600;
   line-height: 30px;
 }
@@ -288,7 +313,6 @@ body {
   border-style: none;
   overflow: hidden;
   transform: scale(0.8);
-  margin-top: -60px;
 }
 .trailer-preview {
   background-color: #FF551F;
@@ -456,12 +480,12 @@ p.overview {
   height: 400px;
   min-height: 400px;
   perspective: 1000px;
-  margin: 1rem;
+  margin: 0.01rem;
   position: relative;
 }
 @media screen and (max-width: 1000px) {
   .cardButton {
-    width: calc(50% - 2rem);
+    width: calc(50% - 0.01rem);
   }
 }
 @media screen and (max-width: 600px) {
@@ -487,7 +511,7 @@ p.overview {
 }
 .front {
   background-size: cover;
-  padding: 2rem;
+  padding: 0.01rem;
   font-size: 1.618rem;
   font-weight: 600;
   color: #fff;
@@ -621,16 +645,4 @@ input[type="radio"]:checked~.star {
 
 .inputsCalificacion {
   display: block;
-}
-
-@media (max-width: 768px) {
-  .white , .overlayText h1 .carousel-caption p , .continuarMirando{
-    font-size: 20px !important;
-  }
-}
-
-@media (max-width: 350px) {
-  .white , .overlayText h1 .carousel-caption p, .continuarMirando{
-    font-size: 15px !important;
-  }
 }

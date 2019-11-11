@@ -15,6 +15,38 @@
     color: white;
 }
 
-.like{
-    right: 38% !important;
+.like {
+    right: 38.5% !important;
+}
+
+.titulosHome {
+    margin-top: 3% !important;
+    margin-bottom: -30px !important;
+}
+
+.recomendaciones {
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+
+    .white,
+    .viernescomicos,
+    .infoTerminarVer,
+    .continuarMirando {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .white,
+    .viernescomicos,
+    .continuarMirando {
+        font-size: 1.3rem !important;
+    }
+
+    .infoTerminarVer {
+        font-size: 0.7rem !important;
+    }
 }

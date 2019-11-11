@@ -24,6 +24,7 @@
 
 .backgroundimage {
     width: 100%;
+    height: 130% !important;
     background: url("../images/background.jpg");
 }
 
@@ -74,6 +75,7 @@
 .izq {
     margin-left: 8%;
     float: left;
+    margin-right: 2%;
 }
 
 .informacion {
@@ -133,8 +135,68 @@
 }
 
 .btnRegistro {
-    margin-right: 40%;
-    float: right;
+    margin-left: 40%;
     width: 20rem;
     margin-bottom: 20%;
+}
+
+@media (max-width: 1024px) {
+    .btnRegistro{
+        margin-left: 30%;
+    }
+
+    .mensajes div p ,.masinformacion p{
+        font-size: 16px;
+    }
+    
+    .mensajes div h1 , .informacion, .masinformacion h2{
+        font-size: 20px;
+    }
+
+    .table{
+        height: 10% !important;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .textoprincipal{
+        font-size: 1.5rem !important;
+    }
+
+    .btnRegistro{
+        margin-left: 30%;
+        width: 15rem;
+    }
+
+    .mensajes div p ,.masinformacion p{
+        font-size: 15px;
+    }
+
+    .mensajes div h1 , .informacion, .masinformacion h2{
+        font-size: 18px;
+    }
+
+    .der{
+        margin-right: 2%;
+        margin-left: 8%;
+    }
+
+    .table{
+        height: 50% !important;
+    }
+}
+
+@media (max-width: 468px) {
+
+    .btnRegistro{
+        margin-left: 25%;
+        width: 10rem;
+    }
+
+    .table{
+        height: 40% !important;
+    }
 }

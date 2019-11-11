@@ -203,6 +203,11 @@ input::-webkit-inner-spin-button {
     .backgroundText {
         font-size: 10rem;
     }
+
+    .breadcrumbRegister3{
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -220,8 +225,11 @@ input::-webkit-inner-spin-button {
 /* BREADCRUMB */
 .packBreadcrumb {
     width: 100%;
-    position: absolute;
-    top: 65px;
+}
+
+.breadcrumbRegister3{
+    margin-top: 20%;
+    margin-bottom: -30%;
 }
 
 @media (max-width: 768px) {
@@ -361,6 +369,10 @@ table {
 
 .labelRegister {
     margin-bottom: 3px;
+}
+
+.imgtarjetas{
+    width: 60%;
 }
 
 @media (max-width: 768) {
