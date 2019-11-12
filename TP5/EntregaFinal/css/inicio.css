@@ -5,7 +5,9 @@
     --boton-hover: #F04610;
 }
 
-
+body{
+    background-color: var(--main-bggreen-color) !important;
+}
 
 .footerLogin {
     width: 100%;
@@ -20,6 +22,10 @@
     padding-left: 20px;
     padding-right: 20px;
     flex-shrink: 0;
+}
+
+.black{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .backgroundimage {
@@ -63,7 +69,7 @@
 .masinformacion {
     margin: 8%;
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 3px;
+    border-radius: 9px;
 }
 
 .der {

@@ -11,7 +11,7 @@
     --cancel-color: #FF3D00;
     --alert-color: #DC3545;
     --accept-color: #01A39D;
-    --modal-color: rgba(0, 54, 58, 0.9);
+    --modal-color: rgba(0, 54, 58, 1);
     --orange-color: #FF551F;
     --calificar-color: #428E92;
     --boton-color: #FF551F;
@@ -147,6 +147,7 @@ nav {
     background: var(--modal-color);
     border-radius: 9px;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modal-title{
@@ -645,4 +646,8 @@ input[type="radio"]:checked~.star {
 
 .inputsCalificacion {
   display: block;
+}
+
+.orange{
+  background-color: var(--boton-color);
 }
