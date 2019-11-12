@@ -139,63 +139,8 @@ body {
 }
 
 /*comentario*/
-.comentario {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 20px;
-
-    background: var(--background-info-color);
-    border-radius: 3px;
-}
-
-.comentario p {
-    padding-left: 30px;
-    width: 95%;
-    height: 95%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: justify;
-}
-
-.comentario h1 {
-    padding-top: 30px;
-    padding-left: 30px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-
-    color: #000000;
-}
-
-.comentar {
-    margin-left: 50%;
-    margin-top: 2%;
-    width: 130px;
-    height: 30px;
-    background-color: var(--boton-color);
-    border-radius: 9px;
-}
-
-.comentar p {
-    position: absolute;
-    height: 16px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.75px;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
+#comentario {
+    background: var(--green3-color);
 }
 
 .usuario {
@@ -327,11 +272,6 @@ input::-webkit-inner-spin-button {
     margin-left: .5rem;
 }
 
-.star {
-    width: 50px;
-    height: 50px;
-}
-
 @media (max-width: 768px) {
     .movieContainer {
         margin: 1rem;
@@ -396,4 +336,10 @@ input[type="radio"]:checked~.star {
 
 #calificacion {
     background: var(--calificar-color);
+}
+
+@media (max-width: 400px) {
+    .title{
+        font-size: 25px;
+    }
 }

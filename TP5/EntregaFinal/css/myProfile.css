@@ -184,5 +184,5 @@ input[type="radio"]:checked~.star {
 }
 
 .cancelarPopup{
-    background-color: var(--alert-color);
+    background-color: var(--login-footer-color);
 }

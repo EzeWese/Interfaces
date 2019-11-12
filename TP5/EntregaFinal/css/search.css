@@ -17,6 +17,15 @@
     .mySearchContainer {
         padding: 1rem 1.5rem 1rem 1.5rem;
     }
+
+    .white {
+        font-size: 16px;
+    }
+
+    #searchMovieButton{
+        font-size: 15px;
+        width: 70% !important;  
+    }
 }
 
 .formMyAccount {
