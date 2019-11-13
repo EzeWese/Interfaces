@@ -13,8 +13,7 @@ body {
 }
 
 .footerHome {
-  position: absolute;
-  bottom: 0px;
+  margin-top: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -45,4 +44,10 @@ body {
 
 .form-control::placeholder {
   color: white;
+}
+
+.netflics {
+  margin-top: 5%;
+  margin-left: 15%;
+  width: 70%;
 }

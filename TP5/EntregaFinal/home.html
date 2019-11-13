@@ -117,7 +117,7 @@
   </div>
 
   <div class="container-fluid mt-3">
-    <h2>Estrenos</h2>
+    <h2 class="white">Estrenos</h2>
   </div>
 
   <div class="container-fluid">
@@ -138,15 +138,15 @@
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
   </div>
 
-  <div class="container-fluid mt-4">
+  <div class="container-fluid mt-3">
     <div>
-      <h2>Viernes</h2>
+      <h2 class="white">Viernes</h2>
     </div>
   </div>
 
@@ -156,21 +156,21 @@
         <div class="carousel-item active">
           <div class="overlay"></div>
           <div class="overlayText align-middle text-center">
-            <h1>#ViernesComicos</h1>
+            <h1 class="viernescomicos">#ViernesComicos</h1>
           </div>
           <img class="d-block w-100" src="images/viernes.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
           <div class="overlay"></div>
           <div class="overlayText align-middle text-center">
-            <h1>#ViernesComicos</h1>
+            <h1 class="viernescomicos">#ViernesComicos</h1>
           </div>
           <img class="d-block w-100" src="images/hangover.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
           <div class="overlay"></div>
           <div class="overlayText align-middle text-center">
-            <h1>#ViernesComicos</h1>
+            <h1 class="viernescomicos">#ViernesComicos</h1>
           </div>
           <img class="d-block w-100" src="images/jump-street.jpg" alt="Third slide">
         </div>
@@ -186,9 +186,9 @@
     </div>
   </div>
 
-  <div class="container-fluid mt-4">
+  <div class="container-fluid mt-3">
     <div>
-      <h2>Terminar de ver</h2>
+      <h2 class="white">Terminar de ver</h2>
     </div>
   </div>
 
@@ -202,17 +202,16 @@
       </ol>
       <!--/.Indicators-->
       <!--Slides-->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner terminardever" role="listbox">
         <div class="carousel-item active">
           <div class="view">
             <img class="d-block w-100" src="images/dora2.jpeg" alt="First slide">
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">Dora y La Ciudad Perdida</h3>
-            <p>67%</p>
-            <button type="button"
-              class="btn btn-lg btn-primary btnCancel mb-3 continuarMirando">Continuar</button>
+            <h3 class="h3-responsive infoTerminarVer">Dora y La Ciudad Perdida</h3>
+            <p class="infoTerminarVer">67%</p>
+            <button type="button" class="btn btn-lg btn-primary btnCancel mb-3 continuarMirando infoTerminarVer">Continuar</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -222,9 +221,9 @@
             <div class="mask rgba-black-strong"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">Breaking Bad - Temporada 3: Episodio 7</h3>
-            <p>20%</p>
-            <button type="button" class="btn btn-lg btn-primary btnCancel mb-3 continuarMirando">Continuar</button>
+            <h3 class="h3-responsive infoTerminarVer">Breaking Bad - Temporada 3: Episodio 7</h3>
+            <p class="infoTerminarVer">20%</p>
+            <button type="button" class="btn btn-lg btn-primary btnCancel mb-3 continuarMirando infoTerminarVer">Continuar</button>
           </div>
         </div>
       </div>
@@ -243,9 +242,15 @@
     <!--/.Carousel Wrapper-->
   </div>
 
-  <div class="container mt-5">
+  <div class="container-fluid mt-3">
+    <div class="">
+      <h2 class="white recomendaciones">Recomendaciones</h2>
+    </div>
+  </div>
+
+  <div class="container mt-3">
     <div class="text-center">
-      <h2>Tus Series</h2>
+      <h2 class="white titulosHome">Tus Series</h2>
     </div>
   </div>
 
@@ -253,60 +258,54 @@
     <div class="card cardButton" href="#!">
       <div class="front" style="background-image: url(images/silicon.jpg);"></div>
       <div class="back">
+        <a class="like cursorPointer" target="new">
+          <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+        </a>
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="serieResume.html" role="button">Ver más</a>
+          <h5>SiliconValley</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+            odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="serieResume.html" role="button">Ver
+            más</a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="card cardButton" href="#!">
       <div class="front" style="background-image: url(images/bad2.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae itaque blanditiis voluptates harum laborum sint hic aperiam facilis ullam, saepe mollitia, reiciendis, et debitis beatae dolor officiis! Nobis, commodi fuga.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="serieResume.html" role="button">Ver más</a>
+            <h5>Breaking Bad</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="serieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="card cardButton" href="#!">
       <div class="front" style="background-image: url(images/papel.jpg);">
       </div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus sunt molestias minima eligendi magni dolorem illum, quia vero, aspernatur ratione veritatis molestiae ab modi maiores nulla possimus tempora? Dolorum.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="serieResume.html" role="button">Ver más</a>
+            <h5>La Casa de Papel</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="serieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
   </div>
 
   <div class="container-fluid mt-3">
     <div class="text-center">
-      <h2>Recomendaciones</h2>
-    </div>
-  </div>
-
-  <div class="container-fluid mt-5">
-    <div class="text-center">
-      <h3>Acción</h3>
+      <h3 class="white titulosHome">Acción</h3>
     </div>
   </div>
 
@@ -315,237 +314,238 @@
       <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/dora.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/guardians.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
-    </div>  
+    </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/naked.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
-    </div>  
+    </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/once-upon.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
-    </div>  
+    </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/broklin.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="text-center">
-      <a class="btn btn-lg btn-primary btnCancel verMas" href="search.html"  style="margin-bottom: 10%;"role="button">Ver más</a>
-    </div>   
+      <a class="btn btn-lg btn-primary btnCancel verMas" href="search.html" style="margin-bottom: 10%;"
+        role="button">Ver más</a>
+    </div>
   </div>
 
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-3">
     <div class="text-center">
-      <h3>Suspenso</h3>
+      <h3 class="white titulosHome">Suspenso</h3>
     </div>
   </div>
 
   <div class="content mb-5">
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/hangover.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
+    </div>
+    <div class="card cardButton" href="#!">
+      <div class="front" style="background-image: url(images/jump-street.jpg);"></div>
+      <div class="back">
+        <div>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="card cardButton" href="#!">
       <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/once-upon.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
-    </div>  
+    </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/naked.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
-    </div>  
+    </div>
     <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
+      <div class="front" style="background-image: url(images/guardians.jpg);"></div>
       <div class="back">
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
+            <h5>Mission Imposible - Fallout</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias
+              odio obcaecati ad cupiditate quia.</p>
+          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver
+            más</a>
+          <a class="like cursorPointer" target="new">
+            <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
-    </div>  
-    <div class="card cardButton" href="#!">
-      <div class="front" style="background-image: url(images/missionImposible.jpg);"></div>
-      <div class="back">
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum inventore beatae quis molestias odio obcaecati ad cupiditate quia, repellendus fuga repudiandae sint alias dolore. Neque fugiat sapiente sit quibusdam.</p>
-          <a class="btn btn-lg btn-primary btnCancel verMas backButton" href="movieResume.html" role="button">Ver más</a>
-        </div>
-      </div>
-      <a class="trailer-preview" style="right: 54%;" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-          <i class="fa fa-star" aria-hidden="true"></i>
-      </a>
-      <a class="like cursorPointer" target="new">
-        <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-      </a>
     </div>
     <div class="text-center">
       <a class="btn btn-lg btn-primary btnCancel verMas" href="search.html" role="button">Ver más</a>
-    </div>   
+    </div>
   </div>
 
   <!-- MODAL -->
   <div class="modal fade" id="calificarModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-          <div id="calificacion" class="modal-content">
-              <div class="inputsCalificacion modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-                  <form id="form">
-                      <p class="clasificacion">
-                          <input id="radio1" type="radio" name="estrellas" value="5">
-                          <!--
-                            --><label for="radio1">★</label>
-                          <!--
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div id="calificacion" class="modal-content">
+        <div class="inputsCalificacion modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form id="form">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5">
+              <!--
+                            --><label class="star" for="radio1">★</label>
+              <!--
                             --><input id="radio2" type="radio" name="estrellas" value="4">
-                          <!--
-                            --><label for="radio2">★</label>
-                          <!--
+              <!--
+                            --><label class="star" for="radio2">★</label>
+              <!--
                             --><input id="radio3" type="radio" name="estrellas" value="3">
-                          <!--
-                            --><label for="radio3">★</label>
-                          <!--
+              <!--
+                            --><label class="star" for="radio3">★</label>
+              <!--
                             --><input id="radio4" type="radio" name="estrellas" value="2">
-                          <!--
-                            --><label for="radio4">★</label>
-                          <!--
+              <!--
+                            --><label class="star" for="radio4">★</label>
+              <!--
                             --><input id="radio5" type="radio" name="estrellas" value="1">
-                          <!--
-                            --><label for="radio5">★</label>
-                      </p>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
-                      data-dismiss="modal">Enviar</button>
-              </div>
-          </div>
+              <!--
+                            --><label class="star" for="radio5">★</label>
+            </p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
+            data-dismiss="modal">Enviar</button>
+        </div>
       </div>
+    </div>
   </div>
 
   <footer class="footerHome">
@@ -557,14 +557,14 @@
   <script src="js/heart.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
 
 </html>

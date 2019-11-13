@@ -14,13 +14,25 @@ body {
     background-color: var(--green-color);
 }
 
+.blackLogin{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
 .form-signin {
-    width: 100%;
-    max-width: 330px;
     padding: 15px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 3px;
+    width: 340px;
+}
+
+.form-register {
+    padding: 15px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    width: 340px;
 }
 
 .formPack {
@@ -79,7 +91,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form-control::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hide {
@@ -119,6 +131,7 @@ input::-webkit-inner-spin-button {
     color: #FFFFFF;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 30px;
     flex-shrink: 0;
 }
 
@@ -161,6 +174,7 @@ input::-webkit-inner-spin-button {
     height: 75px;
     left: 50px;
     top: 50px;
+    z-index: 10;
 }
 
 @media (max-width: 1024px) {
@@ -170,7 +184,8 @@ input::-webkit-inner-spin-button {
         left: 12px;
         top: 12px;
     }
-    .div-faq{
+
+    .div-faq {
         padding-top: 75px !important;
     }
 }
@@ -194,6 +209,11 @@ input::-webkit-inner-spin-button {
     .backgroundText {
         font-size: 10rem;
     }
+
+    .breadcrumbRegister3{
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -206,18 +226,30 @@ input::-webkit-inner-spin-button {
     .backgroundText {
         font-size: 4rem;
     }
+
+    .breadcrumbRegister3{
+        width: 40% !important;
+    }
 }
 
 /* BREADCRUMB */
 .packBreadcrumb {
     width: 100%;
-    position: absolute;
-    top: 65px;
+}
+
+.breadcrumbRegister3{
+    margin-top: 5%;
+    margin-bottom: -5%;
 }
 
 @media (max-width: 768px) {
     .packBreadcrumb {
         font-size: 1rem;
+    }
+
+    .breadcrumbRegister3{
+        margin-top: 10%;
+        margin-bottom: -20%;
     }
 }
 
@@ -231,7 +263,8 @@ input::-webkit-inner-spin-button {
     border-radius: 3px;
 }
 
-.borderTable {
+.borderTable td,
+.borderTable th {
     border-bottom: 1px solid #FFF !important;
 }
 
@@ -255,12 +288,13 @@ input::-webkit-inner-spin-button {
 }
 
 .packBackground {
-    background: rgba(0, 54, 58, 0.4);
+    background: rgba(0, 54, 58, 0.6);
     cursor: pointer;
 }
 
 .packBackgroundSelected {
-    background: rgba(0, 54, 58, 0.7);
+    background: var(--main-bg-color);
+    opacity: .9;
 }
 
 .packBackgroundTop {
@@ -318,4 +352,75 @@ table {
     background-color: rgba(0, 54, 58, .50);
     color: white;
     width: 40%;
+}
+
+.backgroundimage {
+    width: 100%;
+    height: 100%;
+    background: url("../images/background.jpg");
+}
+
+.logo {
+    margin: 30px;
+}
+
+.der {
+    float: right;
+}
+
+.izq {
+    float: left;
+}
+
+.register {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.register a {
+    color: var(--orange-color);
+    padding-left: 4px;
+}
+
+.labelRegister {
+    margin-bottom: 3px;
+}
+
+.imgtarjetas{
+    width: 60%;
+}
+
+@media (max-width: 768) {
+
+    .mensajes h1,
+    .textoprincipal{
+        font-size: 18px !important;
+        width: 40% !important;
+    }
+
+    .mensajes p {
+        font-size: 15px !important;
+    }
+
+    .btnIniciar a,
+    .btnRegistro a {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 368px) {
+
+    .mensajes h1,
+    .textoprincipal{
+        font-size: 15px !important;
+    }
+
+    .mensajes p {
+        font-size: 12px !important;
+    }
+
+    .btnIniciar a,
+    .btnRegistro a {
+        font-size: 15px !important;
+    }
 }

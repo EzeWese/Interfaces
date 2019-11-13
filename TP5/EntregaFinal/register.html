@@ -19,41 +19,41 @@
 
 <body class="text-center">
   <h1 class="animated jackInTheBox backgroundText">NETFLICS</h1>
-  <a href="index.html"><img class="backImage" src="images/back.svg" alt="back"></a>
-  <form class="animated slideInLeft form-signin" action="register2.html">
-    <h5>Registro</h5>
+  <a href="index.html"><img class="backImage" src="images/logo.svg" alt="back"></a>
+  <form class="animated slideInLeft form-register" action="register2.html">
+    <h5 class="packBreadcrumb"><label class="font-weight-bold">Registro</label></h5>
     <div class="form-label-group mt-1">
+        <label for="inputName" class="font-weight-bold izq labelRegister">Nombre</label>
       <input type="text" id="inputName" class="form-control" placeholder="Nombre" required autofocus
         onfocusout="validateName()">
-      <label for="inputName" class="sr-only">Nombre</label>
       <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">Ingrese un nombre.</p>
     </div>
     <div class="form-label-group mt-1">
+      <label for="inputSurname" class="font-weight-bold izq labelRegister">Apellido</label>
       <input type="text" id="inputSurname" class="form-control" placeholder="Apellido" required
         onfocusout="validateSurname()">
-      <label for="inputSurname" class="sr-only">Apellido</label>
       <p class="hide text-left textAlert font-weight-bold" id="surnameErrorMessage">Ingrese un apellido.</p>
     </div>
     <div class="form-label-group mt-1">
+      <label for="inputUser" class="font-weight-bold izq labelRegister">Usuario</label>
       <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required onfocusout="validateUser()">
-      <label for="inputUser" class="sr-only">Usuario</label>
       <p class="hide text-left textAlert font-weight-bold" id="userErrorMessage">Ingrese un usuario.</p>
     </div>
     <div class="form-label-group mt-1">
+      <label for="inputPassword" class="font-weight-bold izq labelRegister">Contraseña</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required
         onfocusout="validatePassword()">
-      <label for="inputPassword" class="sr-only">Contraseña</label>
       <p class="hide text-left textAlert font-weight-bold" id="passwordErrorMessage">Ingrese su contraseña de 8
         carácteres.</p>
     </div>
     <div class="form-label-group mt-1">
+      <label for="inputPassword2" class="font-weight-bold izq labelRegister">Repita Contraseña</label>
       <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña" required
         onfocusout="validatePassword2()">
-      <label for="inputPassword2" class="sr-only">Repita Contraseña</label>
       <p class="hide text-left textAlert font-weight-bold" id="password2ErrorMessage">Repita su contraseña de 8
         carácteres.</p>
     </div>
-    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" id="registerButton"
+    <button class="btn btn-lg btn-primary btn-block buttonGeneral mt-3" type="submit" id="registerButton"
       disabled>CONTINUAR</button>
   </form>
   <footer class="footerLogin">

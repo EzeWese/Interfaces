@@ -19,37 +19,31 @@
 
 <body class="text-center">
   <h1 class="backgroundText">NETFLICS</h1>
-  <a href="register.html"><img class="backImage" src="images/back.svg" alt="back"></a>
+  <a href="index.html"><img class="backImage" src="images/logo.svg" alt="back"></a>
   <form class="animated slideInLeft form-signin" action="register3.html">
-    <h5><a href="register.html" class="loginAnchor">Registro</a> > Información Pago</h5>
+    <h5 class="packBreadcrumb"><a href="register.html" class="loginAnchor">Registro </a><label class="font-weight-bold"> > Información Pago</label></h5>
+    <img class="imgtarjetas" src="http://emcperformanceparts.com/wp-content/uploads/2016/07/tarjetascredito-logo.png" alt="tarjetas">
     <div class="form-label-group mt-1">
+      <label for="inputName" class="font-weight-bold izq labelRegister">Nombre Titular</label>
       <input type="text" id="inputCardName" class="form-control" placeholder="Nombre Titular" required autofocus
         onfocusout="validateCardName()">
-      <label for="inputCardName" class="sr-only">Nombre Titular</label>
       <p class="hide text-left textAlert font-weight-bold" id="cardNameErrorMessage">Ingrese un nombre de titular.</p>
     </div>
     <div class="form-label-group mt-1">
+      <label for="inputCardName" class="font-weight-bold izq labelRegister">Número de Tarjeta</label>
       <input type="number" id="inputCardNumber" class="form-control" placeholder="Número de Tarjeta" required
         onfocusout="validateCardNumber()">
-      <label for="inputCardNumber" class="sr-only">Número de Tarjeta</label>
       <p class="hide text-left textAlert font-weight-bold" id="cardNumberErrorMessage">Ingrese un número de tarjeta de
         16 dígitos.</p>
     </div>
-    <!-- <div class="form-label-group mt-1">
-      <input type="date" id="inputCardExpiration" class="form-control" placeholder="Vencimiento Tarjeta" required
-        onfocusout="validateCardExpiration()" value="2019-11" min="2019-11" max="2035-11">
-      <label for="inputCardExpiration" class="sr-only">Vencimiento Tarjeta</label>
-      <p class="hide text-left textAlert font-weight-bold" id="cardExpirationErrorMessage">Ingrese un vencimiento de
-        tarjeta.</p>
-    </div>
-    -->
 
     <div class="form-label-group mt-1">
+      <label class="font-weight-bold izq labelRegister">Vencimiento Tarjeta</label>
       <div class="fallbackDatePicker form-control">
-        <p class="fallbackLabel">Vencimiento Tarjeta</p>
+        <br>
         <span>
           <select class="custom-select" id="inputCardExpirationMonth" name="month" required
-          onclick="validateCardExpiration()">
+            onclick="validateCardExpiration()">
             <option value="" selected>Mes</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -66,37 +60,37 @@
           </select>
         </span>
         <span>
-          <select class="custom-select" id="inputCardExpirationYear" name="year"required
-          onclick="validateCardExpiration()">
-              <option value="" selected>Año</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-              <option value="2026">2026</option>
-              <option value="2027">2027</option>
-              <option value="2028">2028</option>
-              <option value="2029">2029</option>
+          <select class="custom-select" id="inputCardExpirationYear" name="year" required
+            onclick="validateCardExpiration()">
+            <option value="" selected>Año</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
           </select>
         </span>
-        
+
       </div>
       <p class="hide text-left textAlert font-weight-bold" id="cardExpirationErrorMessage">Ingrese un vencimiento de
-          tarjeta.</p>
+        tarjeta.</p>
     </div>
 
 
     <div class="form-label-group mt-1">
+      <label for="inputCardCode" class="font-weight-bold izq labelRegister">Código de Seguridad</label>
       <input type="number" id="inputCardCode" class="form-control" placeholder="Código de Seguridad" required
         onfocusout="validateCardCode()">
-      <label for="inputCardCode" class="sr-only">Código de Seguridad</label>
       <p class="hide text-left textAlert font-weight-bold" id="cardCodeErrorMessage">Ingrese un código de seguridad de 3
         dígitos.</p>
     </div>
-    <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" type="submit" id="register2Button"
+    <button class="btn btn-lg btn-primary btn-block buttonGeneral mt-3" type="submit" id="register2Button"
       disabled>CONTINUAR</button>
   </form>
   <footer class="footerLogin">

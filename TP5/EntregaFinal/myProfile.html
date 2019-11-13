@@ -95,7 +95,7 @@
     </div>
   </nav>
 
-
+  <!-- MODAL -->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -118,22 +118,25 @@
 
   <main class="myProfileMain">
     <div class="myAccountContainer">
-      <h1>Cuenta</h1>
+      <h1 class="white">Cuenta</h1>
       <div class="row">
         <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
           <div class="form-label-group mt-1">
+            <label class="font-weight-bold">Nombre</label>
             <input type="text" id="inputName" class="form-control" placeholder="Nombre" value="Juan" required
               onfocusout="validateName()">
             <label for="inputName" class="sr-only">Nombre</label>
             <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">Ingrese un nombre.</p>
           </div>
           <div class="form-label-group mt-1">
+            <label class="font-weight-bold">Apellido</label>
             <input type="text" id="inputSurname" class="form-control" placeholder="Apellido" value="Rodriguez" required
               onfocusout="validateSurname()">
             <label for="inputSurname" class="sr-only">Apellido</label>
             <p class="hide text-left textAlert font-weight-bold" id="surnameErrorMessage">Ingrese un apellido.</p>
           </div>
           <div class="form-label-group mt-1">
+            <label class="font-weight-bold">Email</label>
             <input type="email" id="inputEmail" class="form-control" placeholder="Email" value="juan@rodriguez.com"
               required onfocusout="validateEmail()">
             <label for="inputEmail" class="sr-only">Email</label>
@@ -142,6 +145,7 @@
           <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <div class="form-label-group mt-1">
+                <label class="font-weight-bold">Contraseña</label>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" value="12345678"
                   required onfocusout="validatePassword()">
                 <label for="inputPassword" class="sr-only">Contraseña</label>
@@ -151,6 +155,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <div class="form-label-group mt-1">
+                <label class="font-weight-bold">Repita Contraseña</label>
                 <input type="password" id="inputPassword2" class="form-control" placeholder="Repita Contraseña"
                   value="12345678" required onfocusout="validatePassword2()">
                 <label for="inputPassword2" class="sr-only">Repita Contraseña</label>
@@ -160,16 +165,26 @@
             </div>
           </div>
           <div class="form-label-group mt-1">
+            <label class="font-weight-bold">Idioma</label>
             <select class="custom-select" id="inputLanguage">
               <option class="custom-select" selected value="1">Español</option>
-              <option class="custom-select" value="2">Ingles</option>
+              <option class="custom-select" value="2">English</option>
+              <option class="custom-select" value="2">Français</option>
+              <option class="custom-select" value="2">日本語</option>
+              <option class="custom-select" value="2">Deutsch</option>
+              <option class="custom-select" value="2">Italiano</option>
+              <option class="custom-select" value="2">русский</option>
+              <option class="custom-select" value="2">中國人</option>
             </select>
             <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
           </div>
           <div class="form-label-group mt-1">
+            <label class="font-weight-bold">Notificaciones</label>
             <select class="custom-select" id="inputNotification">
-              <option class="custom-select" selected value="1">Recibir sólo notificaciones Inapp</option>
-              <option class="custom-select" value="2">Recibir notificaciones también vía email</option>
+              <option class="custom-select" selected value="1">No recibir notificaciones</option>
+              <option class="custom-select" value="2">Recibir notificaciones vía email</option>
+              <option class="custom-select" value="3">Recibir sólo notificaciones Inapp</option>
+              <option class="custom-select" value="3">Recibir notificaciones vía email e Inapp</option>
             </select>
             <p class="hide text-left textAlert font-weight-bold" id="nameErrorMessage">EJEMPLO</p>
           </div>
@@ -180,7 +195,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <button class="btn btn-lg btn-primary btn-block btnAccept mt-3" id="acceptMyAccountButton"
-                disabled>CONTINUAR</button>
+                disabled>ACEPTAR CAMBIOS</button>
             </div>
           </div>
         </div>
@@ -202,113 +217,138 @@
     </div>
 
     <div class="container-fluid mt-5">
-      <h1 class="historialTitle">Historial</h1>
+      <h1 class="historialTitle white">Historial</h1>
       <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                  </a>
-                  <a class="like cursorPointer" target="new">
-                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                  </a>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+            <div class="card">
+              <a class="notHiperlink" href="movieResume.html">
+                <div class="card-header header-icon-container">
+                  <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
+                </div>
+                <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </a>
-              </div>
+                <a class="like cursorPointer" target="new">
+                  <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                  </a>
-                  <a class="like cursorPointer" target="new">
-                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                  </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+            <div class="card">
+              <a class="notHiperlink" href="movieResume.html">
+                <div class="card-header header-icon-container">
+                  <img class="card-img" src="images/papel.jpg" alt="Card image">
+                </div>
+                <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </a>
-              </div>
+                <a class="like cursorPointer" target="new">
+                  <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                  </a>
-                  <a class="like cursorPointer" target="new">
-                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                  </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+            <div class="card">
+              <a class="notHiperlink" href="serieResume.html">
+                <div class="card-header header-icon-container">
+                  <img class="card-img" src="images/silicon.jpg" alt="Card image">
+                </div>
+                <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </a>
-              </div>
+                <a class="like cursorPointer" target="new">
+                  <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-              <div class="card">
-                <a class="notHiperlink" href="movieResume.html">
-                  <div class="card-header header-icon-container">
-                    <img class="card-img" src="images/missionImposible.jpg" alt="Card image">
-                  </div>
-                  <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                  </a>
-                  <a class="like cursorPointer" target="new">
-                    <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
-                  </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+            <div class="card">
+              <a class="notHiperlink" href="serieResume.html">
+                <div class="card-header header-icon-container">
+                  <img class="card-img" src="images/bad2.jpg" alt="Card image">
+                </div>
+                <a class="trailer-preview" href="#" role="button" data-toggle="modal" data-target="#calificarModal">
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </a>
-              </div>
+                <a class="like cursorPointer" target="new">
+                  <i class="fa fa-heart whiteHeart" aria-hidden="true"></i>
+                </a>
+              </a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="col-2">
+      <a class="btn btn-lg btn-block btnCancel cancelarSubscripcion" href="#" role="button" data-toggle="modal"
+        data-target="#cancelarSubscripcion">Cancelar Suscripción</a>
     </div>
 
   </main>
 
   <!-- MODAL -->
-  <div class="modal fade" id="calificarModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-          <div id="calificacion" class="modal-content">
-              <div class="inputsCalificacion modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-                  <form id="form">
-                      <p class="clasificacion">
-                          <input id="radio1" type="radio" name="estrellas" value="5">
-                          <!--
-                            --><label for="radio1">★</label>
-                          <!--
-                            --><input id="radio2" type="radio" name="estrellas" value="4">
-                          <!--
-                            --><label for="radio2">★</label>
-                          <!--
-                            --><input id="radio3" type="radio" name="estrellas" value="3">
-                          <!--
-                            --><label for="radio3">★</label>
-                          <!--
-                            --><input id="radio4" type="radio" name="estrellas" value="2">
-                          <!--
-                            --><label for="radio4">★</label>
-                          <!--
-                            --><input id="radio5" type="radio" name="estrellas" value="1">
-                          <!--
-                            --><label for="radio5">★</label>
-                      </p>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
-                      data-dismiss="modal">Enviar</button>
-              </div>
-          </div>
+  <div class="modal fade" id="cancelarSubscripcion" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content cancelarPopup">
+        <div class="modal-header">
+          <p class="modal-title" id="exampleModalLongTitle">Seguro que quieres cancelar tu suscripción?</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <p class="modal-body white" id="exampleModalLongTitle">No hay vuelta atras</p>
+          <button type="button" class="btn btn-secondary btnCancel" data-dismiss="modal">CANCELAR</button>
+          <button type="button" class="btn btn-primary btnAccept"><a href="index.html">ACEPTAR</a></button>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="calificarModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div id="calificacion" class="modal-content">
+        <div class="inputsCalificacion modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form id="form">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5">
+              <!--
+                            --><label class="star" for="radio1">★</label>
+              <!--
+                            --><input id="radio2" type="radio" name="estrellas" value="4">
+              <!--
+                            --><label class="star" for="radio2">★</label>
+              <!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3">
+              <!--
+                            --><label class="star" for="radio3">★</label>
+              <!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2">
+              <!--
+                            --><label class="star" for="radio4">★</label>
+              <!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1">
+              <!--
+                            --><label class="star" for="radio5">★</label>
+            </p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-block btnCancel btnSendComment"
+            data-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footerHome">
