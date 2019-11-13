@@ -314,6 +314,7 @@ body {
   border-style: none;
   overflow: hidden;
   transform: scale(0.8);
+  background-color: var(--main-bggreen-color);
 }
 .trailer-preview {
   background-color: #FF551F;
@@ -515,7 +516,6 @@ p.overview {
   padding: 0.01rem;
   font-size: 1.618rem;
   font-weight: 600;
-  color: #fff;
   overflow: hidden;
 }
 .front:before {

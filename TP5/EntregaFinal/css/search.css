@@ -218,12 +218,12 @@ input::-webkit-inner-spin-button {
 .card{
     font-weight: 600;
     width: 100%;
-    color: #9FA7A9;
+    background-color: var(--main-bggreen-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card p , .card h5{
-    color:black;
+    font-style: normal !important;
 }
 
 .like{
